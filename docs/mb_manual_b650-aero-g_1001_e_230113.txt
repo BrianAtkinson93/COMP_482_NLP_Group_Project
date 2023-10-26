@@ -1,0 +1,1702 @@
+B650 AERO G
+User's Manual
+Rev. 1001
+For more product details, please visit GIGABYTE's website.
+https://www.gigabyte.com/Motherboard/B650-AERO-G-rev-10?m=ma#kf
+GIGABYTE will reduce paper use in order to fulfill the responsibilities of a global citizen.
+Also, to reduce the impacts on global warming, the packaging materials of this product
+are recyclable and reusable. GIGABYTE works with you to protect the environment.
+Copyright
+© 2022 GIGA-BYTE TECHNOLOGY CO., LTD. All rights reserved.
+The trademarks mentioned in this manual are legally registered to their respective owners.
+Disclaimer
+Information in this manual is protected by copyright laws and is the property of GIGABYTE.
+Changes to the specifications and features in this manual may be made by GIGABYTE without
+prior notice. No part of this manual may be reproduced, copied, translated, transmitted, or
+published in any form or by any means without GIGABYTE's prior written permission.
+ For detailed product information, carefully read the User's Manual.
+ For quick set-up of the product, refer to the Quick Installation Guide on GIGABYTE's
+website.
+https://download.gigabyte.com/FileList/Manual/mb_manual_quick-guide_am5.pdf?m=sw
+For product-related information, check on our website at: https://www.gigabyte.com
+Identifying Your Motherboard Revision
+The revision number on your motherboard looks like this: "REV: X.X." For example, "REV: 1.0"
+means the revision of the motherboard is 1.0. Check your motherboard revision before
+updating motherboard BIOS, drivers, or when looking for technical information.
+Example:
+Table of Contents
+Chapter 1 Product Introduction .......................................................................................4
+1-1 Motherboard Layout .........................................................................................4
+1-2 Motherboard Block Diagram ............................................................................5
+1-3 Box Contents ....................................................................................................6
+Chapter 2 Hardware Installation .....................................................................................7
+2-1 Installation Precautions ....................................................................................7
+2-2 Product Specifications ......................................................................................8
+2-3 Installing the CPU and CPU Cooler ...............................................................11
+2-4 Installing the Memory .....................................................................................14
+2-5 Installing an Expansion Card .........................................................................15
+2-6 Back Panel Connectors ..................................................................................16
+2-7 Onboard Buttons ............................................................................................18
+2-8 Internal Connectors ........................................................................................20
+Chapter 3 BIOS Setup ..................................................................................................34
+Chapter 4 Installing the Operating System and Drivers ................................................36
+4-1 Operating System Installation ........................................................................36
+4-2 Drivers Installation ..........................................................................................37
+Chapter 5 Appendix ......................................................................................................38
+5-1 Configuring a RAID Set ..................................................................................38
+Regulatory Notices ....................................................................................................39
+Contact Us ................................................................................................................42
+- 3 -
+Chapter 1 Product Introduction
+1-1 Motherboard Layout
+CPU_FAN CPU_LED
+ATX_12V CPU_OPT LED_C2
+SYS_FAN1 D_LED2
+ATX_12V_2X2
+PW_SW SULP_HSALFQ
+USB20 USB 2.0 Hub Socket AM5 QFLED
+ATX
+DP_HDMI20
+U32_DP
+U32G2
+PMUP_6NAF_SYS
+2PMET_CE
+U32
+G 1PMET_CE
+OREA
+PMUP_5NAF_SYS
+U32G2_LAN
+056B
+AUDIO
+UPC_A2M UPC MARDTOOB
+110 80 G023U_F
+AGV
+Intel®
+2.5GbE LAN PCIEX16 1A_5RDD 2A_5RDD 1B_5RDD 2B_5RDD
+4U_BHT ROSNES_ESION
+SOIB_M
+USB 3.2 BAT AMD
+Gen 1 Hub Chipset
+UPC_B2M
+110 80 0 1
+2 33ATAS
+IFIW_2M BS_C2M
+CODEC 110 80
+PCIEX1 23U_F
+iTE®
+Super I/O WS_TSR
+PCIEX4 RST
+CLR_CMOS
+LED_C1 ESPI_DB COM F_USB2 SYS_FAN3 F_PANEL
+F_AUDIO D_LED1 SPI_TPM SYS_FAN2 F_USB1 SYS_FAN4
+Temperature sensor
+- 4 -
+1-2 Motherboard Block Diagram
+PCI Express 5.0 (Note) Bus CPU CLK+/- (100 MHz)
+x4 DDR5 5200/4800/4400 MT/s
+1 M.2 Socket 3
+(M2A_CPU)
+PCI Express 4.0 Bus 2 USB 3.2 Gen 2 Type-A
+x16 x4
+AM5 CPU
+BIOS SPI US HB u b2.0 2 USB 2.0/1.1 61x
+1 M.2 Socket 3 Bus
+TPM sserpxE
+(M2B_CPU) 1 HDMI
+iTE® eSPI ICP
+Super I/O Bus
+1
+Switch DisplayPort In
+IDD
+CODEC
+1 USB Type-C®,
+with USB 3.2 Gen 2 support &
+DisplayPort 1.4 Alt mode tuO ciM tuO
+4x
+eniL FIDP/S
+eICP
+PCI Express 4.0 Bus
+1 USB Type-C®,
+x4 with USB 3.2 Gen 2x2 support
+Switch
+1 USB 3.2 Gen 2 Type-A
+or 4x
+sserpxE
+1 M.2 Socket 3 2 USB 3.2 Gen 1
+(M2C_SB)
+AMD Chipset ICP
+4 USB 2.0/1.1
+1
+PCI Express 3.0 Bus USB 3.2 4 USB 3.2 Gen 1
+Gen 1 Hub
+x1 x1 x1
+Intel® M.2 WIFI 1x
+2.5GbE LAN 4 SATA 6Gb/s sserpxE
+RJ45 ICP
+LAN 1
+(Note) Actual support may vary by CPU.
+- 5 -
+1-3 Box Contents
+5 B650 AERO G motherboard
+5 User's Manual
+5 One antenna
+5 Two SATA cables
+5 One noise detection cable
+5 M.2 screw/standoff
+5 One DisplayPort cable
+5 VisionLINK Connection Guide
+* The box contents above are for reference only and the actual items shall depend on the product package you obtain.
+The box contents are subject to change without notice.
+- 6 -
+Chapter 2 Hardware Installation
+2-1 Installation Precautions
+The motherboard contains numerous delicate electronic circuits and components which can become
+damaged as a result of electrostatic discharge (ESD). Prior to installation, carefully read the user's
+manual and follow these procedures:
+• Prior to installation, make sure the chassis is suitable for the motherboard.
+• Prior to installation, do not remove or break motherboard S/N (Serial Number) sticker or
+warranty sticker provided by your dealer. These stickers are required for warranty validation.
+• Always remove the AC power by unplugging the power cord from the power outlet before
+installing or removing the motherboard or other hardware components.
+• When connecting hardware components to the internal connectors on the motherboard, make
+sure they are connected tightly and securely.
+• When handling the motherboard, avoid touching any metal leads or connectors.
+• It is best to wear an electrostatic discharge (ESD) wrist strap when handling electronic
+components such as a motherboard, CPU or memory. If you do not have an ESD wrist strap,
+keep your hands dry and first touch a metal object to eliminate static electricity.
+• Prior to installing the motherboard, please have it on top of an antistatic pad or within an
+electrostatic shielding container.
+• Before connecting or unplugging the power supply cable from the motherboard, make sure
+the power supply has been turned off.
+• Before turning on the power, make sure the power supply voltage has been set according to
+the local voltage standard.
+• Before using the product, please verify that all cables and power connectors of your hardware
+components are connected.
+• To prevent damage to the motherboard, do not allow screws to come in contact with the
+motherboard circuit or its components.
+• Make sure there are no leftover screws or metal components placed on the motherboard or
+within the computer casing.
+• Do not place the computer system on an uneven surface.
+• Do not place the computer system in a high-temperature or wet environment.
+• Turning on the computer power during the installation process can lead to damage to system
+components as well as physical harm to the user.
+• If you are uncertain about any installation steps or have a problem related to the use of the
+product, please consult a certified computer technician.
+• If you use an adapter, extension power cable, or power strip, ensure to consult with its installation
+and/or grounding instructions.
+- 7 -
+2-2 Product Specifications
+CPU  AMD Socket AM5, support for:
+AMD Ryzen™ 7000 Series Processors
+(Go to GIGABYTE's website for the latest CPU support list.)
+Chipset  AMD B650
+Memory  Support for DDR5 5200/4800/4400 MT/s memory modules
+ 4 x DDR5 DIMM sockets supporting up to 128 GB (32 GB single DIMM capacity)
+of system memory
+ Dual channel memory architecture
+ Support for non-ECC Un-buffered DIMM 1Rx8/2Rx8/1Rx16 memory modules
+ Support for AMD EXtended Profiles for Overclocking (AMD EXPO™) and Extreme
+Memory Profile (XMP) memory module
+(Go to GIGABYTE's website for the latest supported memory speeds and memory
+modules.)
+Onboard  Integrated Graphics Processor:
+Graphics - 1 x USB Type-C® port, supporting USB 3.2 Gen 2 and DisplayPort video
+outputs and a maximum resolution of 3840x2160@144 Hz
+* Support for drawing tablets and 20V@3A of power delivery.
+* Support for DisplayPort 1.4 version.
+- 1 x HDMI port, supporting a maximum resolution of 4096x2160@60 Hz
+* Support for HDMI 2.1 version and HDCP 2.3.
+** Support native HDMI 2.1 TMDS compatible ports.
+(Graphics specifications may vary depending on CPU or graphics card support.)
+Audio  Realtek® ALC1220-VB CODEC
+* The back panel line out jack supports DSD audio.
+ High Definition Audio
+ 2/4/5.1/7.1-channel
+* You can change the functionality of an audio jack using the audio software. To configure
+7.1-channel audio, access the audio software for audio settings.
+ Support for S/PDIF Out
+LAN  Intel® 2.5GbE LAN chip (2.5 Gbps/1 Gbps/100 Mbps)
+Wireless  AMD Wi-Fi 6E RZ616 (MT7922A22M)
+Communication - WIFI a, b, g, n, ac, ax, supporting 2.4/5/6 GHz carrier frequency bands
+Module - BLUETOOTH 5.2
+- Support for 11ax 160MHz wireless standard and up to 2.4 Gbps data rate
+(Actual data rate may vary depending on environment and equipment.)
+Expansion Slots  CPU:
+- 1 x PCI Express x16 slot, supporting PCIe 4.0 and running at x16 (PCIEX16)
+* For optimum performance, if only one PCI Express graphics card is to be installed,
+be sure to install it in the PCIEX16 slot.
+ Chipset:
+- 1 x PCI Express x16 slot, supporting PCIe 4.0 and running at x4 (PCIEX4)
+* The PCIEX4 slot shares bandwidth with the M2C_SB connector. The PCIEX4 slot
+becomes unavailable when a device is installed in the M2C_SB connector.
+- 1 x PCI Express x1 slot, supporting PCIe 3.0 and running at x1 (PCIEX1)
+ Support for AMD CrossFire™ technology (PCIEX16 and PCIEX4)
+- 8 -
+Storage Interface  CPU:
+- 1 x M.2 connector (Socket 3, M key, type 25110/2280 PCIe 5.0 (Note) x4/x2
+SSD support) (M2A_CPU)
+- 1 x M.2 connector (Socket 3, M key, type 25110/2280 PCIe 4.0 x4/x2 SSD
+support) (M2B_CPU)
+ Chipset:
+- 1 x M.2 connector (Socket 3, M key, type 25110/2280 PCIe 4.0 x4/x2 SSD
+support) (M2C_SB)
+- 4 x SATA 6Gb/s connectors
+ RAID 0, RAID 1, and RAID 10 support for NVMe SSD storage devices
+ RAID 0, RAID 1, and RAID 10 support for SATA storage devices
+USB  CPU:
+- 1 x USB Type-C® port on the back panel, with USB 3.2 Gen 2 support
+- 2 x USB 3.2 Gen 2 Type-A ports (red) on the back panel
+ CPU + USB 2.0 Hub:
+- 2 x USB 2.0/1.1 ports on the back panel
+ Chipset:
+- 1 x USB Type-C® port with USB 3.2 Gen 2x2 support, available through the
+internal USB header
+- 1 x USB 3.2 Gen 2 Type-A port (red) on the back panel
+- 2 x USB 3.2 Gen 1 ports available through the internal USB header
+- 4 x USB 2.0/1.1 ports available through the internal USB headers
+ Chipset+USB 3.2 Gen 1 Hub:
+- 4 x USB 3.2 Gen 1 ports on the back panel
+Internal  1 x 24-pin ATX main power connector
+Connectors  1 x 8-pin ATX 12V power connector
+ 1 x 4-pin ATX 12V power connector
+ 1 x CPU fan header
+ 1 x water cooling CPU fan header
+ 4 x system fan headers
+ 2 x system fan/water cooling pump headers
+ 2 x addressable LED strip headers
+ 2 x RGB LED strip headers
+ 1 x CPU cooler LED strip/RGB LED strip header
+ 3 x M.2 Socket 3 connectors
+ 4 x SATA 6Gb/s connectors
+ 1 x front panel header
+ 1 x front panel audio header
+ 1 x USB Type-C® header, with USB 3.2 Gen 2x2 support
+ 1 x USB 3.2 Gen 1 header
+ 2 x USB 2.0/1.1 headers
+ 1 x noise detection header
+ 1 x THB_U4 add-in card connector
+ 1 x Trusted Platform Module header (For the GC-TPM2.0 SPI/GC-TPM2.0 SPI
+2.0 module only)
+ 1 x serial port header
+(Note) Actual support may vary by CPU.
+- 9 -
+Internal  1 x Q-Flash Plus button
+Connectors  1 x reset button
+ 1 x reset jumper
+ 2 x temperature sensor headers
+ 1 x Clear CMOS jumper
+Back Panel  2 x SMA antenna connectors (2T2R)
+Connectors  2 x USB 2.0/1.1 ports
+ 1 x DisplayPort In port
+ 1 x HDMI port
+ 3 x USB 3.2 Gen 2 Type-A ports (red)
+ 1 x USB Type-C® port (DisplayPort), with USB 3.2 Gen 2 support
+ 4 x USB 3.2 Gen 1 ports
+ 1 x RJ-45 port
+ 2 x audio jacks
+ 1 x optical S/PDIF Out connector
+I/O Controller  iTE® I/O Controller Chip
+Hardware  Voltage detection
+Monitor  Temperature detection
+ Fan speed detection
+ Water cooling flow rate detection
+ Fan fail warning
+ Fan speed control
+* Whether the fan (pump) speed control function is supported will depend on the fan
+(pump) you install.
+ Noise detection
+BIOS  1 x 256 Mbit flash
+ Use of licensed AMI UEFI BIOS
+ PnP 1.0a, DMI 2.7, WfM 2.0, SM BIOS 2.7, ACPI 5.0
+Unique Features  Support for GIGABYTE Control Center (GCC)
+* Available applications in GCC may vary by motherboard model. Supported functions
+of each application may also vary depending on motherboard specifications.
+ Support for Q-Flash
+ Support for Q-Flash Plus
+Bundled  Norton® Internet Security (OEM version)
+Software  LAN bandwidth management software
+Operating  Support for Windows 11 64-bit
+System  Support for Windows 10 64-bit
+Form Factor  ATX Form Factor; 30.5cm x 24.4cm
+* GIGABYTE reserves the right to make any changes to the product specifications and product-related information without
+prior notice.
+& Please visit GIGABYTE's website for support lists of CPU, memory modules, SSDs, and M.2 devices.
+https://www.gigabyte.com/Motherboard/B650-AERO-G-rev-10?m=dl#support-dl
+& Please visit the SERVICE/SUPPORT\Utility page on GIGABYTE's website to download the latest version of apps.
+https://www.gigabyte.com/Support/Utility/Motherboard?m=ut
+- 10 -
+2-3 Installing the CPU and CPU Cooler
+Read the following guidelines before you begin to install the CPU:
+• Make sure that the motherboard supports the CPU.
+(Go to GIGABYTE's website for the latest CPU support list.)
+• Always turn off the computer and unplug the power cord from the power outlet before installing the
+CPU to prevent hardware damage.
+• Locate the pin one of the CPU. The CPU cannot be inserted if oriented incorrectly. (Or you may
+locate the notches on both sides of the CPU and alignment keys on the CPU socket.)
+• Apply an even and thin layer of thermal grease on the surface of the CPU.
+• Do not turn on the computer if the CPU cooler is not installed, otherwise overheating and damage
+of the CPU may occur.
+• Set the CPU host frequency in accordance with the CPU specifications. It is not recommended
+that the system bus frequency be set beyond hardware specifications since it does not meet the
+standard requirements for the peripherals. If you wish to set the frequency beyond the standard
+specifications, please do so according to your hardware specifications including the CPU, graphics
+card, memory, hard drive, etc.
+A. Note the CPU Orientation
+Note the alignment keys on the motherboard CPU socket and the notches on the CPU.
+Alignment Key
+Triangle Pin One Marking
+of the CPU Socket
+AM5 CPU Socket
+Alignment Key
+Notch
+Triangle Pin One
+Marking on the CPU
+AM5 CPU
+Notch
+Do not remove the CPU socket cover before inserting the CPU. It may pop off from the load
+plate automatically after you insert the CPU and close the load plate.
+& Please visit GIGABYTE's website for details on hardware installation.
+http://www.gigabyte.com/WebPage/210/quick-guide.html?m=sw
+- 11 -
+B. Installing the CPU
+Follow the steps below to correctly install the CPU into the motherboard CPU socket.
+u
+l
+jGently press the CPU socket lever handle
+down and away from the socket.
+kCompletely lift up the CPU socket lock-
+ing lever.
+lWith your fingers, hold the plastic protec-
+tive cover attached to the metal load plate
+k
+to lift open the metal load plate.
+j
+Pin One
+v
+Hold the CPU with your fingers by the edges.
+Align the CPU pin one marking (triangle) with
+the pin one corner of the CPU socket (or you
+may align the CPU notches with the socket
+alignment keys) and gently insert the CPU
+into position.
+w
+l
+Make sure the CPU is properly installed and
+then close the load plate. Secure the socket jj
+lever under its retention tab. The plastic
+protective cover will pop off by itself and can
+be removed.
+* Always replace the plastic protective cover
+when the CPU is not installed to protect
+the CPU socket. k
+Do not force to engage the CPU socket locking lever when the CPU is not installed correctly
+as this would damage the CPU and CPU socket.
+44 11
+422 133
+- 12 - 2 3
+C. Installing the CPU Cooler
+Be sure to install the CPU cooler after installing the CPU. (Actual installation process may differ depending the
+CPU cooler to be used. Refer to the user's manual for your CPU cooler.)
+u
+Apply an even and thin layer of thermal
+grease on the surface of the installed CPU. 4 1
+2 3
+v
+Type A:
+Type A
+Hook the CPU cooler clip to the mounting
+lug on one side of the retention frame. On
+the other side, push straight down on the
+CPU cooler clip to hook it to the mounting
+lug on the retention frame. Turn the cam kk
+handle from the left side to the right side to
+lock into place.
+Type B: j
+First remove the four screws from the CPU
+retention frame and remove the CPU reten-
+tion frame. Then align the four shoulder j
+screws on the CPU cooler with the standoffs v l
+from the back plate. Fasten each shoulder Type B
+screw in a 1-2-3-4 (x) pattern as shown
+on the right. mm
+u
+4 1
+kk
+2 3
+* When using a Type B CPU cooler, it is not
+recommended to fasten each screw down all the
+way in one step. Follow order 1-2-3-4, fasten screw
+clockwise 1 rotation per step. Repeat steps 1-2-3-4
+till all screws are fastened.
+4 1 4 1
+w
+2 3 2 3
+Finally, attach the power connector of
+the CPU cooler to the CPU fan header
+(CPU_FAN) on the motherboard.
+CPU_FAN 4 1
+4 1 2 3
+2 3
+- 13 -
+2-4 Installing the Memory
+Read the following guidelines before you begin to install the memory:
+• Make sure that the motherboard supports the memory. It is recommended that memory of the same
+capacity, brand, speed, and chips be used. (Go to GIGABYTE's website for the latest supported
+memory speeds and memory modules.)
+• Always turn off the computer and unplug the power cord from the power outlet before installing the
+memory to prevent hardware damage.
+• Memory modules have a foolproof design. A memory module can be installed in only one direction.
+If you are unable to insert the memory, switch the direction.
+Dual Channel Memory Configuration
+This motherboard provides four memory sockets and supports Dual Channel Technology. After the memory
+is installed, the BIOS will automatically detect the specifications and capacity of the memory. Enabling Dual
+Channel memory mode will double the original memory bandwidth.
+The four memory sockets are divided into two channels and each channel has two memory sockets as following:
+ Channel A: DDR5_A1, DDR5_A2
+ Channel B: DDR5_B1, DDR5_B2
+* Recommended Dual Channel Memory Configuration:
+DDR5_A1 DDR5_A2 DDR5_B1 DDR5_B2
+2 Modules - - DS/SS - - DS/SS
+4 Modules DS/SS DS/SS DS/SS DS/SS
+(SS=Single-Sided, DS=Double-Sided, "- -"=No Memory)
+Due to CPU limitations, read the following guidelines before installing the memory in Dual Channel mode.
+1. Dual Channel mode cannot be enabled if only one memory module is installed.
+2. When enabling Dual Channel mode with two or four memory modules, it is recommended that memory of
+the same capacity, brand, speed, and chips be used.
+DDR5_A1
+DDR5_A2
+DDR5_B1
+DDR5_B2
+When installing a single memory module, we recommend that you install it in the DDR5_A2
+or DDR5_B2 socket.
+- 14 -
+2-5 Installing an Expansion Card
+Read the following guidelines before you begin to install an expansion card:
+• Make sure the motherboard supports the expansion card. Carefully read the manual that came
+with your expansion card.
+• Always turn off the computer and unplug the power cord from the power outlet before installing an
+expansion card to prevent hardware damage.
+Follow the steps below to correctly install your expansion card in the expansion slot.
+1. Locate an expansion slot that supports your card. Remove the metal slot cover from the chassis back panel.
+2. Align the card with the slot, and press down on the card until it is fully seated in the slot.
+3. Make sure that the expansion card is fully seated in its slot.
+4. Secure the card's metal bracket to the chassis back panel with a screw.
+5. After installing all expansion cards, replace the chassis cover(s).
+6. Turn on your computer. If necessary, go to BIOS Setup to make any required BIOS changes for your
+expansion card(s).
+7. Install the driver provided with the expansion card in your operating system.
+PCIEX16 Slot
+- 15 -
+2-6 Back Panel Connectors
+SMA Antenna Connectors (2T2R)
+Use this connector to connect an antenna.
+Tighten the antennas to the antenna connectors and then aim the antennas correctly for better
+signal reception.
+USB 2.0/1.1 Port
+The USB port supports the USB 2.0/1.1 specification. Use this port for USB devices.
+DisplayPort In port
+The DisplayPort In port offers video outputs to the motherboard. Refer to the pictures below and the
+USB Type-C® (USB 3.2 Gen 2) port for more information.
+Step 1: Step 2:
+Connect the included DisplayPort cable from the Then connect the USB Type-C® or DisplayPort
+graphics card to the DisplayPort In port on the devices to USB Type-C® port to complete.
+back panel.
+HDMI Port
+The HDMI port is HDCP 2.3 compliant and supports Dolby TrueHD and DTS HD
+Master Audio formats. It also supports up to 192KHz/24bit 7.1-channel LPCM audio
+output. You can use this port to connect your HDMI-supported monitor. The maximum supported resolution is
+4096x2160@60 Hz, but the actual resolutions supported are dependent on the monitor being used.
+After installing the HDMI device, make sure to set the default sound playback device to HDMI.
+(The item name may differ depending on your operating system.)
+USB 3.2 Gen 2 Type-A Port (Red)
+The USB 3.2 Gen 2 port supports the USB 3.2 Gen 2 specification and is compatible to the USB 3.2 Gen 1
+and USB 2.0 specification. Use this port for USB devices.
+• When removing the cable connected to a back panel connector, first remove the cable from your
+device and then remove it from the motherboard.
+• When removing the cable, pull it straight out from the connector. Do not rock it side to side to
+prevent an electrical short inside the cable connector.
+- 16 -
+USB Type-C® Port (with USB 3.2 Gen 2 Support)
+This port supports GIGABYTE VisionLINK technology and has display and data transmission capabilities
+with 20V@3A(60W) of power delivery. You can connect a drawing tablet to this port. This port also supports
+standard USB Type-C® and DisplayPort display output. You can connect a USB Type-C® monitor to this port
+or use an adapter cable to connect a standard DisplayPort monitor. The maximum supported resolution is
+3840x2160@144 Hz when using a DisplayPort monitor, but the actual resolutions supported are dependent
+on the monitor being used. Also, the connector is reversible and supports the USB 3.2 Gen 2 specification and
+is compatible to the USB 3.2 Gen 1 and USB 2.0 specification. You can use this port for USB devices, too.
+USB 3.2 Gen 1 Port
+The USB 3.2 Gen 1 port supports the USB 3.2 Gen 1 specification and is compatible to the USB 2.0
+specification. Use this port for USB devices.
+RJ-45 LAN Port
+The Gigabit Ethernet LAN port provides Internet connection at up to 2.5 Gbps data rate. The following
+describes the states of the LAN port LEDs.
+Speed LED: Activity LED:
+Speed LED Activity LED
+State Description State Description
+Green 2.5 Gbps data rate Blinking Data transmission or receiving is occurring
+Orange 1 Gbps data rate On No data transmission or receiving is occurring
+Off 100 Mbps data rate
+LAN Port
+USB 3.2 Gen 2 Type-A Port (Q-Flash Plus Port)
+The USB 3.2 Gen 2 port supports the USB 3.2 Gen 2 specification and is compatible to the USB 3.2 Gen 1
+and USB 2.0 specification. Use this port for USB devices. Before using Q-Flash Plus (Note), make sure to
+insert the USB flash drive into this port first.
+Line Out/Front Speaker Out
+The line out jack.
+Mic In/Rear Speaker Out
+The Mic in jack.
+Optical S/PDIF Out Connector
+This connector provides digital audio out to an external audio system that supports digital optical audio.
+Before using this feature, ensure that your audio system provides an optical digital audio in connector.
+Audio Jack Configurations:
+Headphone/
+Jack 4-channel 5.1-channel 7.1-channel
+2-channel
+Line Out/Front Speaker Out a a a a
+Mic In/Rear Speaker Out a a a
+Front Panel Line Out/Side Speaker Out a
+Front Panel Mic In/Center/Subwoofer
+a a
+Speaker Out
+You can change the functionality of an audio jack using the audio software. To configure
+7.1-channel audio, access the audio software for audio settings.
+& Please visit GIGABYTE's website for details on configuring the audio software.
+https://www.gigabyte.com/WebPage/698/realtek1220-audio.html
+(Note) To enable the Q-Flash Plus function, please navigate to the "Unique Features" page of GIGABYTE's
+website for more information.
+- 17 -
+2-7 Onboard Buttons
+Quick Buttons
+This motherboard has 2 quick buttons: power button and reset button. The power button and reset button allow
+users to quickly turn on/off or reset the computer in an open-case environment when they want to change
+hardware components or conduct hardware testing.
+PW_SW
+PW_SW: Power Button
+RST_SW: Reset Button
+RST_SW
+The reset button provides you with several functions to use. To remap the button to perform different
+tasks, please navigate to the "BIOS Setup" page of GIGABYTE's website and search for "RST_SW
+(MULTIKEY)" for more information.
+QFLASH_PLUS (Q-Flash Plus Button)
+Q-Flash Plus allows you to update the BIOS when your system is off (S5 shutdown state). Save the latest BIOS
+on a USB thumb drive and plug it into the dedicated port, and then you can now flash the BIOS automatically by
+simply pressing the Q-Flash Plus button. The QFLED will flash when the BIOS matching and flashing activities
+start and will stop flashing when the main BIOS flashing is complete.
+QFLASH_PLUS
+QFLED
+QFLED
+QFLASH_PLUS
+To enable the Q-Flash Plus function, please navigate to the "Unique Features" page of GIGABYTE's
+website for more information.
+- 18 -
+Status LEDs
+The status LEDs show whether the CPU, memory, graphics card, and operating system are working properly
+after system power-on. If the CPU/DRAM/VGA LED is on, that means the corresponding device is not working
+normally; if the BOOT LED is on, that means you haven't entered the operating system yet.
+CPU: CPU status LED
+DRAM: Memory status LED
+VGA: Graphics card status LED
+BOOT: Operating system status LED
+CPU DRAM
+VGA BOOT
+- 19 -
+2-8 Internal Connectors
+1 6 3 410 9
+8
+7
+2
+5
+12
+15
+23 20
+24
+12
+11
+12
+16
+22
+21
+14 9 8 19 18 4 17 4 13
+1) ATX_12V_2X2/ATX_12V 13) F_PANEL
+2) ATX 14) F_AUDIO
+3) CPU_FAN 15) F_U320G
+4) SYS_FAN1/2/3/4 16) F_U32
+5) SYS_FAN5/6_PUMP 17) F_USB1/F_USB2
+6) CPU_OPT 18) COM
+7) EC_TEMP1/EC_TEMP2 19) SPI_TPM
+8) D_LED1/D_LED2 20) THB_U4
+9) LED_C1/LED_C2 21) CLR_CMOS
+10) CPU_LED 22) RST
+11) SATA3 0/1/2/3 23) BAT
+12) M2A_CPU/M2B_CPU/M2C_SB 24) NOISE_SENSOR
+Read the following guidelines before connecting external devices:
+• First make sure your devices are compliant with the connectors you wish to connect.
+• Before installing the devices, be sure to turn off the devices and your computer. Unplug the power
+cord from the power outlet to prevent damage to the devices.
+• After installing the device and before turning on the computer, make sure the device cable has
+been securely attached to the connector on the motherboard.
+- 20 -
+(cid:71)(cid:46)(cid:81)(cid:66)(cid:79)(cid:70)(cid:77)
+DEBUG
+PORT
+(cid:71)(cid:46)(cid:81)(cid:66)(cid:79)(cid:70)(cid:77)
+DEBUG
+PORT
+1/2) ATX_12V_2X2/ATX_12V/ATX (2x2, 2x4, 12V Power Connectors and 2x12 Main Power Connector)
+With the use of the power connector, the power supply can supply enough stable power to all the components
+on the motherboard. Before connecting the power connector, first make sure the power supply is turned
+off and all devices are properly installed. The power connector possesses a foolproof design. Connect the
+power supply cable to the power connector in the correct orientation.
+The 12V power connector mainly supplies power to the CPU. If the 12V power connector is not connected,
+the computer will not start.
+To meet expansion requirements, it is recommended that a power supply that can withstand high
+power consumption be used (500W or greater). If a power supply is used that does not provide the
+required power, the result can lead to an unstable or unbootable system.
+ATX_12V_2X2:
+Pin No. Definition
+3 4 1 GND
+1 2 2 GND
+3 +12V
+ATX_12V_2X2
+4 +12V
+ATX_12V:
+Pin No. Definition
+1 GND (Only for 2x4-pin 12V)
+2 GND (Only for 2x4-pin 12V)
+5 8
+3 GND
+1 4
+4 GND
+ATX_12V
+5 +12V (Only for 2x4-pin 12V)
+6 +12V (Only for 2x4-pin 12V)
+7 +12V
+8 +12V
+ATX:
+Pin No. Definition Pin No. Definition
+12 24
+1 3.3V 13 3.3V
+2 3.3V 14 -12V
+3 GND 15 GND
+4 +5V 16 PS_ON (soft On/Off)
+5 GND 17 GND
+6 +5V 18 GND
+7 GND 19 GND
+8 Power Good 20 NC
+9 5VSB (stand by +5V) 21 +5V
+10 +12V 22 +5V
+11 +12V (Only for 2x12-pin 23 +5V (Only for 2x12-pin ATX)
+ATX)
+1 13
+12 3.3V (Only for 2x12-pin 24 GND (Only for 2x12-pin ATX)
+ATX)
+ATX
+- 21 -
+(cid:71)(cid:46)(cid:81)(cid:66)(cid:79)(cid:70)(cid:77)
+(cid:71)(cid:46)(cid:81)(cid:66)(cid:79)(cid:70)(cid:77)
+DEBUG
+PORT
+DEBUG
+PORT
+(cid:71)(cid:46)(cid:81)(cid:66)(cid:79)(cid:70)(cid:77)
+DEBUG
+PORT
+3/4) CPU_FAN/SYS_FAN1/2/3/4 (Fan Headers)
+All fan headers on this motherboard are 4-pin. Most fan headers possess a foolproof insertion design.
+When connecting a fan cable, be sure to connect it in the correct orientation (the black connector wire is
+the ground wire). The speed control function requires the use of a fan with fan speed control design. For
+optimum heat dissipation, it is recommended that a system fan be installed inside the chassis.
+Pin No. Definition
+1 1 GND
+CPU_FAN/SYS_FAN1 2 Voltage Speed Control
+3 Sense
+4 PWM Speed Control
+1
+SYS_FAN2/SYS_FAN3/
+SYS_FAN4
+5) SYS_FAN5/6_PUMP (System Fan/Water Cooling Pump Headers)
+The fan/pump headers are 4-pin. Most fan headers possess a foolproof insertion design. When connecting
+a fan cable, be sure to connect it in the correct orientation (the black connector wire is the ground wire).
+The speed control function requires the use of a fan with fan speed control design. For optimum heat
+dissipation, it is recommended that a system fan be installed inside the chassis. The header also provides
+speed control for a water cooling pump. Please navigate to the "BIOS Setup" page of GIGABYTE's website
+and search for "Smart Fan 6" for more information.
+Pin No. Definition
+1 GND
+2 Voltage Speed Control
+1 3 Sense
+4 PWM Speed Control
+• Be sure to connect fan cables to the fan headers to prevent your CPU and system from
+overheating. Overheating may result in damage to the CPU or the system may hang.
+• These fan headers are not configuration jumper blocks. Do not place a jumper cap on the headers.
+- 22 -
+(cid:71)(cid:46)(cid:81)(cid:66)(cid:79)(cid:70)(cid:77)
+DEBUG
+PORT
+6) CPU_OPT (Water Cooling CPU Fan Header)
+The fan header is 4-pin and possesses a foolproof insertion design. Most fan headers possess a foolproof
+insertion design. When connecting a fan cable, be sure to connect it in the correct orientation (the black
+connector wire is the ground wire). The speed control function requires the use of a fan with fan speed
+control design.
+Pin No. Definition
+1 GND
+1
+2 Voltage Speed Control
+3 Sense
+4 PWM Speed Control
+Connector CPU_FAN SYS_FAN1~4 SYS_FAN5~6_PUMP CPU_OPT
+Maximum Current 2A 2A 2A 2A
+Maximum Power 24W 24W 24W 24W
+7) EC_TEMP1/EC_TEMP2 (Temperature Sensor Headers)
+Connect the thermistor cables to the headers for temperature detection.
+Pin No. Definition
+1 SENSOR IN
+1
+2 GND
+EC_TEMP2
+1
+EC_TEMP1
+- 23 -
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31) F_USB30
+U(cid:31)(cid:31) S(cid:31)(cid:31)(cid:31) S(cid:31)(cid:31)(cid:31) S(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)S(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)3(cid:31)
+_(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) _(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) _(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)B_(cid:31)
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)S(cid:31) (cid:31)B_(cid:31)(cid:31)(cid:31) F_(cid:31)U(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)S(cid:31)(cid:31)(cid:31)F(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)B_(cid:31) (cid:31)
+B(cid:31)(cid:31)S(cid:31)S(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)S(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)
+S(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+_S(cid:31)(cid:31)
+USB(cid:31)0_(cid:31)B
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)S (cid:31)(cid:31)(cid:31)(cid:31)S (cid:31)S_(cid:31)(cid:31) BS_(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)(cid:31)S(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) B(cid:31)(cid:31)S(cid:31)S(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)U(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31) (cid:31)_(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) 123 1 1
+123 1 (cid:31)(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)
+321 1 (cid:31)(cid:31)B_(cid:31)
+(cid:31)(cid:31)(cid:31) 321
+(cid:31)(cid:31)(cid:31)
+F_(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+(cid:31)_S(cid:31)
+(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)F(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)0(cid:31)_(cid:31)(cid:31) (cid:31)(cid:31)
+(cid:31)_(cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) (cid:31)F(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) (cid:31)0(cid:31)_(cid:31)(cid:31) F_USB3(cid:31)(cid:31) (cid:31)F(cid:31)(cid:31)_(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) (cid:31)U(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)3_(cid:31)(cid:31)
+3
+(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31) (cid:31)(cid:31)_(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)_B(cid:31)
+B(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)U(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)S(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)S(cid:31)(cid:31)(cid:31)(cid:31)
+1 (cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31)
+2 S(cid:31)(cid:31)(cid:31)F_(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+3 (cid:31) (cid:31) (cid:31)(cid:31)(cid:31) (cid:31)(cid:31)_S(cid:31)(cid:31)B (cid:31)B(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) F_USB30(cid:31)3(cid:31)(cid:31) S(cid:31)S_F(cid:31)(cid:31)
+8) D_LED1/D_LED2 (Addressable LED Strip Headers) (cid:31)(cid:31)B_(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31)
+The headers can be used to connect a standard 5050 addressable LED strip, with maximum power rating F(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31)
+of 5A (5V) and maximum number of 1000 LEDs. F_USB3(cid:31)(cid:31)F(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)B(cid:31) (cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)U (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)B(cid:31) (cid:31)(cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)S_(cid:31)(cid:31) (cid:31)(cid:31) (cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31)S (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)B(cid:31) S(cid:31)B_(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)B(cid:31) (cid:31)(cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) F_(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+Pin No. Definition (cid:71)(cid:46)(cid:81)(cid:66)(cid:79)(cid:70)(cid:77)
+1 1 V (5V) S(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31)
+D_LED2
+2 Data
+(cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)S
+3 No Pin (cid:71)(cid:46)(cid:81)(cid:66)(cid:79)(cid:70)(cid:77)
+1
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)F(cid:31)(cid:31)3BSU_F
+D_LED1 4 GND
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)_F (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31)(cid:31) (cid:31)B(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)_B(cid:31)S (cid:31)B(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) S(cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)_S(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31)(cid:31) (cid:31)B(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) U(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31) (cid:31)B(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)F
+(cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)3(cid:31)03BSU_F
+(cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)_B(cid:31)(cid:31)
+Connect your addressable LED strip (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)_F(cid:31)(cid:31)(cid:31)S (cid:31)(cid:31)F_S(cid:31)S (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)B(cid:31) B(cid:31)(cid:31)S_(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)(cid:31)S(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)S(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)U(cid:31)(cid:31)(cid:31)
+Addressable LED to the header. The power pin (marked Strip (cid:31)(cid:31)(cid:31) (cid:31) (cid:31)
+with a triangle on the plug) of the LED strip must be connected to Pin 1 of 3
+(cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31) 2
+the addressable LED strip header. Incorrect connection may lead to the 1 (cid:31)B_(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)_(cid:31)(cid:31) (cid:31)(cid:31)_3(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)U(cid:31) (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) 1
+damage of the LED strip. (cid:31)(cid:31)B (cid:31)(cid:31)3BSU_F
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31) (cid:31)(cid:31)_(cid:31)0(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)F(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)
+3 (cid:31)(cid:31)_(cid:31)(cid:31)F(cid:31) (cid:31)(cid:31)_(cid:31)0(cid:31) (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)F(cid:31)
+(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31)_(cid:31)
+9) LED_C1/LED_C2 (RGB LED Strip Headers)
+The headers can be used to connect a sDtaEnBdUaGr d 5050 RGB LED strip (12V/G/R/B), with maximum power (cid:31)(cid:31)
+rating of 2A (12V) and maximum length oPfO 2RmT. (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)_F (cid:31)(cid:31)
+(cid:31)S_(cid:31) (cid:31)(cid:31)(cid:31)
+DEBUG
+PORT
+(cid:31)(cid:31)(cid:31) 1 123 1 Pin No. Definition (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)S(cid:31)S(cid:31)(cid:31)B (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)S(cid:31)(cid:31)(cid:31)(cid:31) 123 (cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)U(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31) (cid:31)_B(cid:31)(cid:31)
+1 321 1 12V LED_C2 (cid:31)(cid:31)(cid:31) 321 (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)_(cid:31) (cid:31)(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31) 2 G 1 1 B(cid:31)_0(cid:31)BSU (cid:31)(cid:31)(cid:31)_SB (cid:31)(cid:31)_S(cid:31) S(cid:31)(cid:31)(cid:31)(cid:31) S(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+1 3 R
+LED_C1 4 B
+(cid:31)(cid:31)S_
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)S
+(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)S(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)S(cid:31)S(cid:31)(cid:31)B (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)F(cid:31)(cid:31)(cid:31)S(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+Connect your RGB LED strip to the
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+header. The power pin (marked with a (cid:31)S(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+triangle on the plug) of the LED strip must be connected to Pin 1 (12V) of RGB LED Strip (cid:31)_B(cid:31)(cid:31)
+this header. Incorrect connection may lead to the damage of the LED strip. (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)U(cid:31)_F (cid:31) (cid:31)(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)_B(cid:31)
+1
+12V
+For how to turn on/off the lights of the LED strip, please navigate to the "Unique Features" page (cid:31)3(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)S(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) (cid:31)_B(cid:31)(cid:31)
+of GIGABYTE's website.
+Before installing the devices, be sure to turn off the devices and your computer. Unplug the power
+cord from the power outlet to prevent damage to the devices.
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)_ (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)_ (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)_
+- 24 - (cid:31)(cid:31)(cid:31)S (cid:31)(cid:31)(cid:31)S (cid:31)(cid:31)(cid:31)S (cid:31)(cid:31)U
+03BSU_F
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)
+10) CPU_LED (CPU Cooler LED Strip/RGB LED Strip Header)
+The header can be used to connect a CPU cooler LED strip or a standard 5050 RGB LED strip (12V/G/R/B),
+with maximum power rating of 2A (12V) and maximum length of 2m.
+Pin No. Definition
+1 1 12V
+2 G
+3 R
+4 B
+Connect the CPU cooler LED strip/ LED Strip
+RGB LED strip to the header. The
+power pin (marked with a triangle on the plug) of the LED strip must be
+1
+connected to Pin 1 (12V) of this header. Incorrect connection may lead to
+12V
+the damage of the LED strip.
+For how to turn on/off the lights of the LED strip, please navigate to the "Unique Features" page
+of GIGABYTE's website.
+Before installing the devices, be sure to turn off the devices and your computer. Unplug the power
+cord from the power outlet to prevent damage to the devices.
+11) SATA3 0/1/2/3 (SATA 6Gb/s Connectors)
+The SATA connectors conform to SATA 6Gb/s standard and are compatible with SATA 3Gb/s and SATA
+1.5Gb/s standard. Each SATA connector supports a single SATA device. The SATA connectors support
+RAID 0, RAID 1, and RAID 10. Please navigate to the "Configuring a RAID Set" page of GIGABYTE's
+website for instructions on configuring a RAID array.
+(cid:71)(cid:46)(cid:81)(cid:66)(cid:79)(cid:70)(cid:77) (cid:71)(cid:46)(cid:81)(cid:66)(cid:79)(cid:70)(cid:77)
+Pin No. Definition
+1 GND
+7 1 2 TXP
+7 1 3 TXN
+4 GND
+SATA3 2 0 5 RXN
+3 1
+6 RXP
+7 GND
+To enable hot-plugging for the SATA ports, please navigate to the "BIOS Setup" page of GIGABYTE's
+website and search for "SATA Configuration" for more information.
+- 25 -
+DEBUG DEBUG
+PORT PORT
+PORT DEBUG
+(cid:71)(cid:46)(cid:81)(cid:66)(cid:79)(cid:70)(cid:77)
+(cid:31)(cid:31)(cid:31)(cid:31)S(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)S(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)U(cid:31)(cid:31)(cid:31)
+F_USB30 F_(cid:31)U(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) F_(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) F_(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) (cid:31) (cid:31) 3 2 1
+(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)(cid:31)S(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)S(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)U(cid:31)(cid:31)(cid:31)
+F_USB30 F_(cid:31)U(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) F_(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) F_(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) (cid:31) (cid:31) 3 2 1
+(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)(cid:31)S(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)S(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)U(cid:31)(cid:31)(cid:31)
+F_USB30 F_(cid:31)U(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) F_(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) F_(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+(cid:31)B_(cid:31)(cid:31)(cid:31) (cid:31) B(cid:31)(cid:31)S(cid:31)S(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) (cid:31) (cid:31) 3 2 1
+(cid:31)(cid:31)(cid:31) 1
+1
+1 (cid:31)_S(cid:31) (cid:31)(cid:31)
+1
+(cid:31)(cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31) B(cid:31)(cid:31)S_(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) B(cid:31)(cid:31)S(cid:31)S(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)B(cid:31) (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)B(cid:31)
+(cid:31)(cid:31)(cid:31) (cid:31)B_(cid:31)(cid:31)(cid:31) (cid:31)
+(cid:31)(cid:31)(cid:31)(cid:31)S(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) 1 321 (cid:31)(cid:31)(cid:31) 3211 1
+1 (cid:31)(cid:31)(cid:31) (cid:31)_S(cid:31) (cid:31)(cid:31)
+B(cid:31)(cid:31)S(cid:31)S(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+(cid:31)B_(cid:31)(cid:31)(cid:31) (cid:31) (cid:31)(cid:31)(cid:31) 1213
+1123 S (cid:31)(cid:31)(cid:31)(cid:31) (cid:31)B __ (cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31) B(cid:31)(cid:31)S_(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)B(cid:31)
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)S(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) (cid:31)(cid:31) (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) 1 (cid:31)_S(cid:31) (cid:31)(cid:31) (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)B(cid:31) (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)B(cid:31) (cid:31)(cid:31)(cid:31) S(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)(cid:31)S(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) S(cid:31)(cid:31)(cid:31)(cid:31) 1
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+321 (cid:31)(cid:31)(cid:31) 321
+(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31) B(cid:31)(cid:31)S_(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)B(cid:31) (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)B(cid:31)
+(cid:31) (cid:31)(cid:31) (cid:31)(cid:31) (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)(cid:31)S(cid:31)(cid:31)(cid:31) 1(cid:31)(cid:31) 2(cid:31)(cid:31)(cid:31) (cid:31) 3(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) S(cid:31) (cid:31)(cid:31) (cid:31)(cid:31)(cid:31) B_ _(cid:31)(cid:31) (cid:31)(cid:31) (cid:31)S (cid:31) 123 (cid:31)(cid:31)(cid:31)
+321 (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)B(cid:31) (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)S(cid:31) (cid:31)(cid:31) (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31) (cid:31) (cid:31)(cid:31) (cid:31)S (cid:31)(cid:31)__ (cid:31)(cid:31) (cid:31)(cid:31) (cid:31) (cid:31) (cid:31)(cid:31) (cid:31)(cid:31) (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) S S(cid:31)(cid:31)_(cid:31) (cid:31)(cid:31) (cid:31)S(cid:31) (cid:31)(cid:31) (cid:31)(cid:31)(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31) 321
+(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)B(cid:31) 123
+123 S(cid:31)B_(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)B(cid:31)
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) B(cid:31)S (cid:31)(cid:31)(cid:31) S(cid:31)S(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)S(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)U(cid:31)(cid:31)(cid:31) (cid:31) (cid:31)(cid:31) (cid:31)(cid:31) (cid:31)(cid:31) (cid:31)(cid:31) (cid:31)(cid:31)_ __(cid:31) (cid:31)(cid:31)(cid:31) (cid:31)(cid:31)U (cid:31)(cid:31)S (cid:31) (cid:31)(cid:31) (cid:31)(cid:31) (cid:31)(cid:31) (cid:31)(cid:31) (cid:31)(cid:31) (cid:31)(cid:31) (cid:31)(cid:31) (cid:31)(cid:31) S S (cid:31)(cid:31)(cid:31)(cid:31) (cid:31) _(cid:31) (cid:31)(cid:31) (cid:31) S(cid:31) (cid:31)(cid:31)(cid:31) B(cid:31)
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)S(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)3(cid:31) (cid:31)(cid:31)F(cid:31)
+(cid:31)(cid:31) (cid:31)_(cid:31)(cid:31)(cid:31)_(cid:31)(cid:31) 3 (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)S(cid:31)(cid:31)_(cid:31)B(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)_S(cid:31)
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)B(cid:31)
+(cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31)S
+F_US(cid:31)(cid:31)B3(cid:31)(cid:31)F(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)S_(cid:31)(cid:31)
+S(cid:31)(cid:31)(cid:31) _(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)_(cid:31)_(cid:31)(cid:31)(cid:31)U(cid:31)(cid:31) (cid:31)(cid:31)_S(cid:31)
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)S(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)3(cid:31) (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)B(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)S(cid:31)(cid:31)(cid:31)(cid:31)S(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)S(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)F(cid:31)(cid:31)(cid:31)S(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) (cid:31)(cid:31) (cid:31)(cid:31) (cid:31)(cid:31) _(cid:31)(cid:31) (cid:31)(cid:31) (cid:31)(cid:31) (cid:31)(cid:31) (cid:31)(cid:31) (cid:31)(cid:31) (cid:31)(cid:31) (cid:31)U (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) (cid:31) (cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31) (cid:31)(cid:31)_ (cid:31)(cid:31) (cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31) BB(cid:31) (cid:31)(cid:31) (cid:31)(cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31)(cid:31)0(cid:31)(cid:31)(cid:31)F(cid:31) (cid:31)(cid:31)(cid:31)_SB
+(cid:31)(cid:31) (cid:31)_(cid:31)(cid:31)(cid:31)_(cid:31)(cid:31) 3
+(cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)U
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)S(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)3(cid:31) B(cid:31)(cid:31)S(cid:31)S(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)S(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)U(cid:31)(cid:31)(cid:31) (cid:31)(cid:31) (cid:31)_(cid:31)(cid:31)(cid:31)_(cid:31)(cid:31) 3(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)_B(cid:31) (cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)F (cid:31)_US(cid:31) (cid:31)(cid:31) (cid:31)B(cid:31) (cid:31)_ (cid:31)3 (cid:31)(cid:31) (cid:31)(cid:31)(cid:31) B(cid:31)(cid:31)F (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) S(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)F(cid:31) (cid:31)(cid:31)(cid:31)_SB
+S(cid:31)(cid:31)(cid:31) _(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) (cid:31)(cid:31) (cid:31)(cid:31) B(cid:31)(cid:31)(cid:31) _(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)S(cid:31)(cid:31)(cid:31)F(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)(cid:31)__(cid:31)(cid:31)(cid:31)0F(cid:31)(cid:31)
+(cid:31)_(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+S(cid:31)(cid:31)(cid:31) _S(cid:31)(cid:31) F_USB3(cid:31)(cid:31)F(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+S(cid:31)(cid:31)(cid:31) _(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)S(cid:31)(cid:31)(cid:31)F(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)_(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)_B(cid:31) (cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31) S(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)_(cid:31)0(cid:31)
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31)0_(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)F(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)F(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+S(cid:31)(cid:31)(cid:31) _(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)B_(cid:31) (cid:31)_(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+S(cid:31)(cid:31)(cid:31) _S(cid:31)(cid:31)
+(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)_B(cid:31) (cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31) S(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)_(cid:31)(cid:31)F(cid:31)
+(cid:31)(cid:31)B_(cid:31) (cid:31)_(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+S(cid:31)(cid:31)(cid:31) _S(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31)(cid:31)0(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)F(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+S(cid:31)(cid:31)(cid:31) _(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) S(cid:31)(cid:31)(cid:31)F_(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)_(cid:31)0(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)F(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+S(cid:31)(cid:31)(cid:31) _(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)(cid:31) B(cid:31)(cid:31) S(cid:31)S_F(cid:31)(cid:31) (cid:31)(cid:31)B_(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) S(cid:31)(cid:31)(cid:31)F_(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+S(cid:31)(cid:31)(cid:31) _(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31) F(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)_3(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)U(cid:31) 12) M2A_CPU/M2B_CPU/M2C_SB (M.2 Socket 3 Connectors)
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) B(cid:31)(cid:31) S(cid:31)(cid:31)(cid:31)FS_(cid:31)S(cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)F(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)B_(cid:31)(cid:31)
+There are two types of M.2 SSDs: M.2 SATA SSDs and M.2 PCIe SSDs. This motherboard only supports
+M.2 PCIe SSDs. Please note that an M.2 PCIe SSD cannot be used to create a RAID set with a SATA
+hard drive. Please navigate to the "Configuring a RAID Set" page of GIGABYTE's website for instructions
+S(cid:31)(cid:31)(cid:31) _(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)(cid:31) B(cid:31)(cid:31) S(cid:31)S_F(cid:31)(cid:31) (cid:31)(cid:31)B_(cid:31)(cid:31) on configuring a RAID array.
+(cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31) F(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)_3(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)U(cid:31)
+S(cid:31)(cid:31)(cid:31) _(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31) F_USB3(cid:31)(cid:31) F_USB30(cid:31)3(cid:31)(cid:31) M2A_CPU
+(cid:31)(cid:31)B_(cid:31) 110 80
+U(cid:31)(cid:31) (cid:31)(cid:31)B_(cid:31) (cid:31)(cid:31)(cid:31)(cid:31) USB(cid:31)0_(cid:31)B (cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31) F(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)_3(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)U(cid:31)
+(cid:31)(cid:31)(cid:31) F_USB3(cid:31)(cid:31) F_USB30(cid:31)3(cid:31)(cid:31) M2B_CPU
+(cid:31)(cid:31)B_(cid:31) 110 80
+U(cid:31)(cid:31) (cid:31)(cid:31)B_(cid:31) (cid:31)(cid:31)(cid:31)(cid:31) USB(cid:31)0_(cid:31)B
+(cid:31)(cid:31)(cid:31) F_USB3(cid:31)(cid:31) F_USB30(cid:31)3(cid:31)(cid:31) M2C_SB
+(cid:31)(cid:31)B_(cid:31) 110 80
+U(cid:31)(cid:31) (cid:31)(cid:31)B_(cid:31) (cid:31)(cid:31)(cid:31)(cid:31) USB(cid:31)0_(cid:31)B
+Follow the steps below to correctly install an M.2 SSD in the M.2 connector.
+Step 1:
+Unfasten the screws on the motherboard heatsink diagonally to remove the heatsink. Select the M.2 slot
+you want to use and press down on the M.2 EZ-Latch clip to open it.
+• If you want to install an M.2 SSD that came with its own heatsink, you have to remove the
+EZ-Latch clip first and use the provided screw and standoff to fasten the SSD.
+• If you want install an M.2 SSD in the 110mm hole that already has a motherboard heatsink
+standoff, be sure to remove the EZ-Latch clip first and use the motherboard heatsink screw to
+secure the heatsink and SSD.
+Step 2:
+Insert the M.2 SSD into the M.2 connector at an angle. Press down on the front end of the M.2 SSD and
+close M.2 EZ-Latch clip to secure the M.2 SSD.
+Step 3:
+Remove the protective film from the bottom of the motherboard heatsink and then replace the heatsink
+and tighten the screws diagonally.
+* Types of M.2 SSDs supported by each M.2 connector:
+M.2 PCIe x4 SSD M.2 PCIe x2 SSD M.2 SATA SSD
+M2A_CPU a a r
+M2B_CPU a a r
+M2C_SB a a r
+& Please visit GIGABYTE's website for details on using M.2 EZ-Latch.
+Install the M.2 SSD: https://www.gigabyte.com/WebPage/919/M2-ezlatch.html
+* Motherboard heatsink design may vary by model.
+- 26 -
+(cid:71)(cid:46)(cid:81)(cid:66)(cid:79)(cid:70)(cid:77)
+DEBUG
+PORT
+13) F_PANEL (Front Panel Header)
+Connect the power switch, reset switch, speaker, chassis intrusion switch/sensor and system status indicator
+on the chassis to this header according to the pin assignments below. Note the positive and negative pins
+before connecting the cables.
+Power LED Power Switch Speaker
++DELP
++WP
++KAEPS -KAEPS
+-DELP
+-WP CN CN
+2 20
+1 19
+-DH +SER +IC +DEL_RWP -DEL_RWP -DEL_RWP
++DH -SER -IC
+Hard Drive Reset Power LED
+Activity LED Switch
+Chassis Intrusion
+Header
+• PLED/PWR_LED (Power LED):
+System Status LED Connects to the power status indicator on the chassis front panel. The LED
+S0 On is on when the system is operating. The LED is off when the system is in S3/
+S3/S4/S5 Off S4 sleep state or powered off (S5).
+• PW (Power Switch):
+Connects to the power switch on the chassis front panel. You may configure the way to turn off your
+system using the power switch (please navigate to the "BIOS Setup" page of GIGABYTE's website and
+search for "Soft-Off by PWR-BTTN" for more information).
+• SPEAK (Speaker):
+Connects to the speaker on the chassis front panel. The system reports system startup status by issuing
+a beep code. One single short beep will be heard if no problem is detected at system startup.
+• HD (Hard Drive Activity LED):
+Connects to the hard drive activity LED on the chassis front panel. The LED is on when the hard drive
+is reading or writing data.
+• RES (Reset Switch):
+Connects to the reset switch on the chassis front panel. Press the reset switch to restart the computer
+if the computer freezes and fails to perform a normal restart.
+• CI (Chassis Intrusion Header):
+Connects to the chassis intrusion switch/sensor on the chassis that can detect if the chassis cover has
+been removed. This function requires a chassis with a chassis intrusion switch/sensor.
+• NC: No connection.
+The front panel design may differ by chassis. A front panel module mainly consists of power switch,
+reset switch, power LED, hard drive activity LED, speaker and etc. When connecting your chassis
+front panel module to this header, make sure the wire assignments and the pin assignments are
+matched correctly.
+- 27 -
+(cid:31)(cid:31)(cid:31)(cid:31)S(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)S(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)U(cid:31)(cid:31)(cid:31)
+F_USB30 F_(cid:31)U(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) F_(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) F_(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) (cid:31) (cid:31) 3 2 1
+(cid:31)(cid:31)(cid:31)
+B(cid:31)(cid:31)S(cid:31)S(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+(cid:31)B_(cid:31)(cid:31)(cid:31) (cid:31)
+1
+1
+1 (cid:31)_S(cid:31) (cid:31)(cid:31)
+1
+(cid:31)(cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31) B(cid:31)(cid:31)S_(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)B(cid:31) (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)B(cid:31)
+(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)(cid:31)S(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+321 (cid:31)(cid:31)(cid:31) 321
+(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31) 123
+123 S(cid:31)B_(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)B(cid:31)
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)S(cid:31) (cid:31)(cid:31) (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31) S(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) S(cid:31)(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31)S
+(cid:31)(cid:31)
+(cid:31)(cid:31)S_(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)_S(cid:31)
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)B(cid:31)
+(cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)U
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)S(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)3(cid:31) B(cid:31)(cid:31)S(cid:31)S(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)S(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)U(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)F(cid:31) (cid:31)(cid:31)(cid:31)_SB
+(cid:31)(cid:31) (cid:31)_(cid:31)(cid:31)(cid:31)_(cid:31)(cid:31) 3 (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)B(cid:31)
+F_USB3(cid:31)(cid:31)F(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+S(cid:31)(cid:31)(cid:31) _(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)S(cid:31)(cid:31)(cid:31)F(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)_(cid:31)0(cid:31)
+(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)_B(cid:31) (cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31) S(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31)
+14) F_AUDIO (Front Panel Audio Header)
+(cid:31)(cid:31)_(cid:31)(cid:31)F(cid:31)
+(cid:31)(cid:31)B_(cid:31) (cid:31)_(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) (cid:31) The front panel audio header supports High Definition audio (HD). You may connect your chassis front
+S(cid:31)(cid:31)(cid:31) _S(cid:31)(cid:31)
+panel audio module to this header. Make sure the wire assignments of the module connector match the
+pin assignments of the motherboard header. Incorrect connection between the module connector and the
+motherboard header will make the device unable to work or even damage it.
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31)
+Pin No. Definition
+(cid:31)(cid:31)_(cid:31)0(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)F(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+S(cid:31)(cid:31)(cid:31) _(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+1 MIC L
+9 1
+2 GND (cid:31)(cid:31)(cid:31)(cid:31)S(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)S(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)U(cid:31)(cid:31)(cid:31)
+F_USB30 F_(cid:31)U(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) F_(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) F_(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+3 MIC R (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) (cid:31) (cid:31) 3 2 1
+10 2 4 NC (cid:31)(cid:31)(cid:31)
+5 Head Phone R (cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+6 MIC Detection
+(cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) S(cid:31)(cid:31)(cid:31)F_(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+7 SENSE_SEND
+8 No Pin
+9 Head Phone L
+(cid:31)(cid:31)(cid:31)(cid:31) B(cid:31)(cid:31) S(cid:31)S_F(cid:31)(cid:31) (cid:31)(cid:31)B_(cid:31)(cid:31) 10 Head Phone
+Detection
+B(cid:31)(cid:31)S(cid:31)S(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+(cid:31)B_(cid:31)(cid:31)(cid:31) (cid:31)
+S(cid:31)(cid:31)(cid:31) _(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+Some chassis provide a front panel audio m1odule that has separated connectors on each wire 1
+instead of a single plug. For information about connecting the front panel audio module that has
+1 (cid:31)_S(cid:31) (cid:31)(cid:31)
+different wire assignments(cid:31)(cid:31),(cid:31)_ p(cid:31)(cid:31)(cid:31)lease contact Fth(cid:31)(cid:31)e(cid:31)(cid:31) (cid:31)(cid:31)c(cid:31)(cid:31)h(cid:31)(cid:31)(cid:31)a(cid:31)ssis manufacturer. (cid:31)(cid:31)_3(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)U(cid:31) 1
+(cid:31)(cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31) B(cid:31)(cid:31)S_(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)B(cid:31) (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)B(cid:31)
+(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) 15) F_U320G (USB Type-C® Header with USB(cid:31)(cid:31)(cid:31) (cid:31)3S(cid:31).(cid:31)2(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)G(cid:31)(cid:31)(cid:31)(cid:31)e(cid:31)(cid:31)(cid:31)n(cid:31) 2x2 Support)
+321 The header conforms to USB 3.2 Gen 2x2 specification and can provide one USB port. (cid:31)(cid:31)(cid:31) 321
+(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31) 123
+(cid:31)(cid:31)B_(cid:31) (cid:31)(cid:31)(cid:31) F_USB3(cid:31)(cid:31) F_USB30(cid:31)3(cid:31)(cid:31) 123 Pin No. Definition Pin No. Definition S (cid:31)(cid:31)(cid:31)(cid:31) (cid:31)B (cid:31)(cid:31)_ B(cid:31) (cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)
+U(cid:31)(cid:31) (cid:31)(cid:31)B_(cid:31) (cid:31)(cid:31)(cid:31)(cid:31) USB(cid:31)0_(cid:31)B (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)S(cid:31) (cid:31)(cid:31) (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) 10 11 1 VBUS 11 VBUS (cid:31) (cid:31)(cid:31) (cid:31)(cid:31) (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) S S(cid:31) (cid:31)(cid:31) (cid:31)(cid:31) (cid:31)(cid:31) (cid:31)(cid:31)(cid:31)(cid:31)
+2 TX1+ 12 TX2+
+3 TX1- 13 TX2-
+1 20 4 GND 14 GND
+5 RX1+ 15 RX2+ (cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31)S
+(cid:31)(cid:31)
+6 RX1- 16 RX2- (cid:31)(cid:31)S_(cid:31)(cid:31)
+7 VBUS 17 GND (cid:31)(cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)_S(cid:31)
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)B(cid:31)
+8 CC1 18 D-
+9 SBU1 19 D+
+10 SBU2 20 CC2 (cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)U
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)S(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)3(cid:31) B(cid:31)(cid:31)S(cid:31)S(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)S(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)U(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)F(cid:31) (cid:31)(cid:31)(cid:31)_SB
+(cid:31)(cid:31) (cid:31)_(cid:31)(cid:31)(cid:31)_(cid:31)(cid:31) 3 (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)B(cid:31)
+F_USB3(cid:31)(cid:31)F(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+S(cid:31)(cid:31)(cid:31) _(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)S(cid:31)(cid:31)(cid:31)F(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)_(cid:31)0(cid:31)
+(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)_B(cid:31) (cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31) S(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31)
+- 28 -
+(cid:31)(cid:31)_(cid:31)(cid:31)F(cid:31)
+(cid:31)(cid:31)B_(cid:31) (cid:31)_(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+S(cid:31)(cid:31)(cid:31) _S(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)_(cid:31)0(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)F(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+S(cid:31)(cid:31)(cid:31) _(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) S(cid:31)(cid:31)(cid:31)F_(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)(cid:31) B(cid:31)(cid:31) S(cid:31)S_F(cid:31)(cid:31) (cid:31)(cid:31)B_(cid:31)(cid:31)
+S(cid:31)(cid:31)(cid:31) _(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31) F(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)_3(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)U(cid:31)
+(cid:31)(cid:31)(cid:31) F_USB3(cid:31)(cid:31) F_USB30(cid:31)3(cid:31)(cid:31)
+(cid:31)(cid:31)B_(cid:31)
+U(cid:31)(cid:31) (cid:31)(cid:31)B_(cid:31) (cid:31)(cid:31)(cid:31)(cid:31) USB(cid:31)0_(cid:31)B
+(cid:31)(cid:31)(cid:31)(cid:31)S(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)S(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)U(cid:31)(cid:31)(cid:31)
+F_USB30 F_(cid:31)U(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) F_(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) F_(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+16) F_U32 (USB 3.2 Gen 1 Header) (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) (cid:31) (cid:31) 3 2 1
+The header conforms to USB 3.2 Gen 1 and USB 2.0 specification and can provide two USB ports. For (cid:31)(cid:31)(cid:31)
+purchasing the optional 3.5" front panel that provides two USB 3.2 Gen 1 ports, please contact the local
+dealer.
+Pin No. Definition Pin No. Definition
+20 1 1 VBUS 11 D2+
+2 SSRX1- 12 D2-
+3 SSRX1+ 13 GND
+(cid:71)(cid:46)(cid:81)(cid:66)(cid:79)(cid:70)(cid:77)
+4 GND 14 SSTXB2(cid:31)(cid:31)+S(cid:31)S(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+(cid:31)B_(cid:31)(cid:31)(cid:31) (cid:31)
+5 SSTX1- 15 SSTX2- 1
+1
+6 SSTX1+ 16 GND
+11 10 1 (cid:31)_S(cid:31) (cid:31)(cid:31)
+7 GND 17 SSRX2+ 1
+8 D1- 18 SSRX2-
+9 D1+ 19 VBUS (cid:31)(cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31) B(cid:31)(cid:31)S_(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)B(cid:31) (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)B(cid:31)
+10 NC 20 No Pin
+(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)(cid:31)S(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+321 (cid:31)(cid:31)(cid:31) 321
+(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31) 123
+123 S(cid:31)B_(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)B(cid:31)
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)S(cid:31) (cid:31)(cid:31) (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31) S(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) S(cid:31)(cid:31)(cid:31)(cid:31)
+17) F_USB1/F_USB2 (USB 2.0/1.1 Headers) (cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31)S
+(cid:31)(cid:31)
+D POEB RU TG oT ph te io h ne aa l d Ue Srs B c bo ran cfo kr em t. t Fo o U r pS uB r c2 h. a0 s/1 in.1 g s thp ee c oifi pc tia ot nio an l . U E Sa Bc h b rU acS kB e th , e pa led ae sr e c ca on n p taro cv t i td he e t lw oco a U l dS eB a lp eo r.rts via an (cid:31) (cid:31)(cid:31) (cid:31)S (cid:31)(cid:31)__ (cid:31)(cid:31) (cid:31)(cid:31) (cid:31) (cid:31)(cid:31)_S(cid:31)
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)B(cid:31)
+Pin No. Definition
+1 Power (5V)
+(cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)U
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)S(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)3(cid:31) 9 1 B(cid:31)(cid:31)S(cid:31)S(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)S(cid:31)(cid:31)(cid:31) 2 Power (5(cid:31)V(cid:31)(cid:31)(cid:31))(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)U(cid:31)(cid:31)(cid:31) (cid:31)(cid:31) (cid:31)_(cid:31)(cid:31)(cid:31)_(cid:31)(cid:31) 3 (cid:31) (cid:31)(cid:31) (cid:31)(cid:31) (cid:31)_ (cid:31)(cid:31)(cid:31) (cid:31)(cid:31) B(cid:31) (cid:31) (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)F(cid:31) (cid:31)(cid:31)(cid:31)_SB
+10 2 3 USB DX-
+4 USB DY-
+5 USB DX+
+F_USB3(cid:31)(cid:31)F(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+6 USB DY+
+S(cid:31)(cid:31)(cid:31) _(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) 7 GND
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)S(cid:31)(cid:31)(cid:31)F(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) 8 GND (cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)_(cid:31)0(cid:31)
+9 No Pin
+10 NC
+(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)_B(cid:31) (cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31) S(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)_(cid:31)(cid:31)F(cid:31)
+(cid:31)(cid:31)B_(cid:31) (cid:31)_(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+S(cid:31)(cid:31)(cid:31) _S(cid:31)(cid:31)
+• Do not plug the IEEE 1394 bracket (2x5-pin) cable into the USB 2.0/1.1 header.
+• Prior to installing the USB bracket, be sure to turn off your computer and unplug the power cord
+from the power outlet to prevent damage to the USB bracket.
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)_(cid:31)0(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)F(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+S(cid:31)(cid:31)(cid:31) _(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+- 29 -
+(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) S(cid:31)(cid:31)(cid:31)F_(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)(cid:31) B(cid:31)(cid:31) S(cid:31)S_F(cid:31)(cid:31) (cid:31)(cid:31)B_(cid:31)(cid:31)
+S(cid:31)(cid:31)(cid:31) _(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31) F(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)_3(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)U(cid:31)
+(cid:31)(cid:31)(cid:31) F_USB3(cid:31)(cid:31) F_USB30(cid:31)3(cid:31)(cid:31)
+(cid:31)(cid:31)B_(cid:31)
+U(cid:31)(cid:31) (cid:31)(cid:31)B_(cid:31) (cid:31)(cid:31)(cid:31)(cid:31) USB(cid:31)0_(cid:31)B
+(cid:31)(cid:31)(cid:31)(cid:31)S(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)S(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)U(cid:31)(cid:31)(cid:31)
+F_USB30 F_(cid:31)U(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) F_(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) F_(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) (cid:31) (cid:31) 3 2 1
+(cid:31)(cid:31)(cid:31)
+B(cid:31)(cid:31)S(cid:31)S(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+(cid:31)B_(cid:31)(cid:31)(cid:31) (cid:31)
+1
+1 18) COM (Serial Port Header)
+1 (cid:31)_S(cid:31) (cid:31)(cid:31) The COM header can provide one serial port via an optional COM port cable. For purchasing the optional 1
+COM port cable, please contact the local dealer.
+(cid:31)(cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31) B(cid:31)(cid:31)S_(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)B(cid:31) (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)B(cid:31)
+(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)(cid:31)S(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) Pin No. Definition
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+321 1 NDCD- (cid:31)(cid:31)(cid:31) 321
+(cid:31)(cid:31)(cid:31) 9 1 2 NSIN
+(cid:31)(cid:31)(cid:31) 3 NSOUT 123
+123 S(cid:31)B_(cid:31)(cid:31)(cid:31) 4 NDTR- (cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)B(cid:31)
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)S(cid:31) (cid:31)(cid:31) (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) 5 GND (cid:31)(cid:31)(cid:31) S(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+10 2 6 NDSR- (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) S(cid:31)(cid:31)(cid:31)(cid:31)
+7 NRTS-
+8 NCTS-
+(cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31)S 9 NRI-
+(cid:31)(cid:31)
+10 No Pin
+(cid:31)(cid:31)S_(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)_S(cid:31)
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)B(cid:31)
+(cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)U
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)S(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)3(cid:31) B(cid:31)(cid:31)S(cid:31)S(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)S(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)U(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)F(cid:31) (cid:31)(cid:31)(cid:31)_SB
+(cid:31)(cid:31) (cid:31)_(cid:31)(cid:31)(cid:31)_(cid:31)(cid:31) 3 (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)B(cid:31)
+F_USB3(cid:31)(cid:31)F(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+S(cid:31)(cid:31)(cid:31) _(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) 19) SPI_TPM (Trusted Platform Module Header)
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)S(cid:31)(cid:31)(cid:31)F(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) You may connect an SPI TPM (Trusted Platform Module) to this header. (cid:31)(cid:31)_(cid:31)0(cid:31)
+Pin No. Definition
+(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)_B(cid:31) (cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31) S(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31) 1 Data Output
+2 Power (3.3V)
+11 1
+(cid:31)(cid:31)B_(cid:31) (cid:31)_(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) 12 2 3 No Pin (cid:31)(cid:31)_(cid:31)(cid:31)F(cid:31)
+S(cid:31)(cid:31)(cid:31) _S(cid:31)(cid:31) 4 NC
+5 Data Input
+6 CLK
+7 Chip Select
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31) 8 GND
+(cid:31)(cid:31)_(cid:31)0(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)F(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+S(cid:31)(cid:31)(cid:31) _(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) 9 IRQ
+10 NC
+11 NC
+12 RST
+(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) S(cid:31)(cid:31)(cid:31)F_(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)(cid:31) B(cid:31)(cid:31) S(cid:31)S_F(cid:31)(cid:31) (cid:31)(cid:31)B_(cid:31)(cid:31)
+S(cid:31)(cid:31)(cid:31) _(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) - 30 -
+(cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31) F(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)_3(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)U(cid:31)
+(cid:31)(cid:31)(cid:31) F_USB3(cid:31)(cid:31) F_USB30(cid:31)3(cid:31)(cid:31)
+(cid:31)(cid:31)B_(cid:31)
+U(cid:31)(cid:31) (cid:31)(cid:31)B_(cid:31) (cid:31)(cid:31)(cid:31)(cid:31) USB(cid:31)0_(cid:31)B
+20) THB_U4 (Add-in Card Connector)
+This connector is for a GIGABYTE add-in card.
+1
+B(cid:31)_0(cid:31)BSU (cid:31)(cid:31)(cid:31)(cid:31) (cid:31)_B(cid:31)(cid:31) (cid:31)(cid:31)U
+(cid:31)_B(cid:31)(cid:31)
+(cid:31)(cid:31)3(cid:31)03BSU_F (cid:31)(cid:31)3BSU_F (cid:31)(cid:31)(cid:31)
+(cid:31)U(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)3_(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)F (cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)_ (cid:31)(cid:31)(cid:31)S
+(cid:31)(cid:31)_B(cid:31)(cid:31) (cid:31)(cid:31)F_S(cid:31)S (cid:31)(cid:31)B (cid:31)(cid:31)(cid:31)(cid:31)
+21) CLR_CMOS (Clear CMOS Jumper)
+Use this jumper to clear the BIOS configuration and reset the CMOS values to factory defaults. To clear
+the CMO(cid:31)(cid:31)(cid:31)S(cid:31)(cid:31)(cid:31)(cid:31) (cid:31)v(cid:31)_aFl(cid:31)u(cid:31)(cid:31)Ses, use a metal object like a screwdriv(cid:31)(cid:31)e(cid:31)(cid:31)(cid:31)r(cid:31)(cid:31) (cid:31)t_o(cid:31)(cid:31) (cid:31)touch the two pins for a few seconds.
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)
+Open: Normal
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)_ (cid:31)(cid:31)(cid:31)S
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)F(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)0(cid:31)_(cid:31)(cid:31) Short: Clear CMOS Values
+(cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)S_ (cid:31)(cid:31)(cid:31)S
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)_(cid:31) (cid:31)_B(cid:31)(cid:31)
+(cid:31)F(cid:31)(cid:31)_(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)S (cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31) (cid:31)B_(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)
+• Always turn off your computer and unplug the power cord from the power outlet before clearing
+the CMOS values.
+(cid:31)0(cid:31)_(cid:31)(cid:31) • After system restart, go to BIOS Setup to loa(cid:31)(cid:31)d(cid:31)(cid:31)(cid:31) (cid:31)f(cid:31)a(cid:31)(cid:31)c(cid:31)_t(cid:31)o(cid:31)(cid:31)ry defaults (select Lo(cid:31)(cid:31)a(cid:31)(cid:31)(cid:31)dF (cid:31)O(cid:31)(cid:31)Sp(cid:31)(cid:31)t(cid:31)(cid:31)i(cid:31)m(cid:31)(cid:31)(cid:31)(cid:31)i(cid:31)z(cid:31)(cid:31)e(cid:31)(cid:31)(cid:31)d(cid:31)(cid:31) (cid:31)D(cid:31)(cid:31)(cid:31)(cid:31)e(cid:31)(cid:31)faults) or
+manually configure the BIOS settings (please navigate to the "BIOS Setup" page of GIGABYTE's (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)_ (cid:31)(cid:31)(cid:31)S
+website for more information).
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)F(cid:31)(cid:31)3BSU_F
+(cid:31)B(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) 3 (cid:31)(cid:31)_(cid:31)(cid:31)(cid:31)_(cid:31) (cid:31)(cid:31) - 31 -
+BS_(cid:31)(cid:31)(cid:31) (cid:31)F(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)U(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)S(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)S(cid:31)S(cid:31)(cid:31)B (cid:31)3(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)S(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+U(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31)
+(cid:31)B(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+(cid:31)S_(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)_S(cid:31)(cid:31)
+(cid:31)(cid:31)
+S(cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)(cid:31)S (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)S (cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) (cid:31)(cid:31) (cid:31)S(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+(cid:31)B(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)_B(cid:31)S 321 (cid:31)(cid:31)(cid:31) 321
+(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31) 123
+(cid:31)(cid:31)(cid:31)
+123 (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)S(cid:31)(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)
+(cid:31)B(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) (cid:31)B(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)_S(cid:31)(cid:31)B (cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31) (cid:31)S_(cid:31) 1
+1
+1
+1
+(cid:31) (cid:31)(cid:31)(cid:31)_B(cid:31)
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)S(cid:31)S(cid:31)(cid:31)B
+(cid:31)(cid:31)(cid:31)
+1 2 3 (cid:31) (cid:31) (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)_F (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)_F (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)U(cid:31)_F 03BSU_F
+(cid:31)(cid:31)(cid:31)U(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)S(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)S(cid:31)(cid:31)(cid:31)(cid:31)
+22) RST (Reset Jumper)
+The reset jumper can connect to the reset switch on the chassis front panel. Press the reset switch to
+restart the computer if the computer freezes and fails to perform a normal restart.
+Pin No. Definition
+1 Reset
+1 2 GND
+The reset jumper provides you with several functions to use. To remap the button to perform different
+tasks, please navigate to the "BIOS Setup" page of GIGABYTE's website and search for "RST_SW
+(MULTIKEY)" for more information.
+B(cid:31)_0(cid:31)BSU (cid:31)(cid:31)(cid:31)(cid:31) (cid:31)_B(cid:31)(cid:31) (cid:31)(cid:31)U
+23) BAT (Battery)
+(cid:31)_B(cid:31)(cid:31)
+The battery prov(cid:31)i(cid:31)d3(cid:31)e03sB SpUo_Fwer to kee(cid:31)(cid:31)p3B SthUe_F values (su(cid:31)(cid:31)c(cid:31)h as BIOS configurations, date, and time information)
+in the CMOS when the computer is turned off. Replace the battery when the battery voltage drops to a low
+level, or the CMOS values may not be accurate or may be lost.
+(cid:31)U(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)3_(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)F (cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)_ (cid:31)(cid:31)(cid:31)S
+You may clear the CMOS values by removing the battery:
+1. Turn off your computer and unplug the power cord.
+(cid:31)(cid:31)_B(cid:31)(cid:31) (cid:31)(cid:31)F_S(cid:31)S (cid:31)(cid:31)B 2. Gently remove the ba(cid:31) t(cid:31) t(cid:31) e(cid:31) ry from the battery holder and wait for one
+minute. (Or use a metal object like a screwdriver to touch the positive
+and negative terminals of the battery holder, making them short for
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)_F(cid:31)(cid:31)(cid:31)S 5 seconds.) (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) 3. Replace the battery.
+(cid:31)(cid:31)(cid:31) 4. Plug in the power cord and restart your computer.
+• Always turn off your computer and unplug the power cord before replacing the battery.
+• Replace the battery with an equivalent one. Damage to your devices may occur if the battery is
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)F(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)0(cid:31)_(cid:31)(cid:31) replaced with an incorrect model. (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)_ (cid:31)(cid:31)(cid:31)S
+• Contact(cid:31) (cid:31)(cid:31) t_ h(cid:31)(cid:31) e(cid:31) place of pu(cid:31)(cid:31)(cid:31)(cid:31)r(cid:31)c(cid:31)hase or local dealer if you are not able to replace the battery by yourself
+or uncertain about the battery model.
+• When installing the battery, note the orientation of the positive side (+) and the negative side (-)
+of the battery (the positive side should face up). (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)_(cid:31) (cid:31)(cid:31)S_ (cid:31)(cid:31)(cid:31)S (cid:31)_B(cid:31)(cid:31)
+(cid:31)F(cid:31)(cid:31)_(cid:31)(cid:31) • Used batteries must be handled in accordance with local environmental regulations.
+(cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)S (cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31) (cid:31)B_(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)_(cid:31)(cid:31) - 32 -
+(cid:31)0(cid:31)_(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)F(cid:31)(cid:31)(cid:31)S(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)_ (cid:31)(cid:31)(cid:31)S
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)F(cid:31)(cid:31)3BSU_F
+BS_(cid:31)(cid:31)(cid:31) (cid:31)F(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) (cid:31)B (cid:31)(cid:31)(cid:31)(cid:31)(cid:31) _(cid:31) (cid:31)(cid:31) (cid:31)(cid:31) (cid:31)(cid:31) 3 (cid:31)(cid:31)_(cid:31)(cid:31)(cid:31)_(cid:31) (cid:31)(cid:31) (cid:31)(cid:31)(cid:31)U(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)S(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)S(cid:31)S(cid:31)(cid:31)B (cid:31)3(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)S(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+U(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31)
+(cid:31)B(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+(cid:31)S_(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)_S(cid:31)(cid:31)
+(cid:31)(cid:31)
+S(cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)(cid:31)S (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)S (cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) (cid:31)(cid:31) (cid:31)S(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+(cid:31)B(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)_B(cid:31)S 321 (cid:31)(cid:31)(cid:31) 321
+(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31) 123
+(cid:31)(cid:31)(cid:31)
+123 (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)S(cid:31)(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)
+(cid:31)B(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) (cid:31)B(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31) (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)_S(cid:31)(cid:31)B (cid:31)(cid:31)(cid:31)_(cid:31)(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31) (cid:31)S_(cid:31) 1 1
+1
+(cid:31) (cid:31)(cid:31)(cid:31)_B(cid:31) 1
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)S(cid:31)S(cid:31)(cid:31)B
+(cid:31)(cid:31)(cid:31)
+1 2 3 (cid:31)(cid:31) (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)
+(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)_F (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)_F (cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)U(cid:31)_F 03BSU_F
+(cid:31)(cid:31)(cid:31)U(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)S(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)(cid:31)S(cid:31)(cid:31)(cid:31)(cid:31)
+24) NOISE_SENSOR (Noise Detection Header)
+This header can be used to connect a noise detection cable to detect the noise inside the case.
+Pin No. Definition
+1 Noise Detection
+2 GND
+1
+Noise Detection
+Cable
+1
+For more information on the noise detection function, please navigate to the "Unique Features"
+page of GIGABYTE's website and search for "FAN CONTROL."
+Before connecting the cable to the header, make sure to remove the jumper cap; re-place the
+jumper cap if the header is not in use.
+- 33 -
+Chapter 3 BIOS Setup
+BIOS (Basic Input and Output System) records hardware parameters of the system in the CMOS on the
+motherboard. Its major functions include conducting the Power-On Self-Test (POST) during system startup,
+saving system parameters and loading operating system, etc. BIOS includes a BIOS Setup program that allows
+the user to modify basic system configuration settings or to activate certain system features.
+When the power is turned off, the battery on the motherboard supplies the necessary power to the CMOS to
+keep the configuration values in the CMOS.
+To access the BIOS Setup program, press the <Delete> key during the POST when the power is turned on.
+To upgrade the BIOS, use either the GIGABYTE Q-Flash or Q-Flash Plus utility.
+• Q-Flash allows the user to quickly and easily upgrade or back up BIOS without entering the operating system.
+• Q-Flash Plus allows you to update the BIOS when your system is off (S5 shutdown state). Save the latest
+BIOS on a USB thumb drive and plug it into the dedicated port, and then you can now flash the BIOS
+automatically by simply pressing the Q-Flash Plus button.
+For instructions on using the Q-Flash and Q-Flash Plus utilities, please navigate to the "Unique Features" page
+of GIGABYTE's website and search for "BIOS Update Utilities."
+• Because BIOS flashing is potentially risky, if you do not encounter problems using the current
+version of BIOS, it is recommended that you not flash the BIOS. To flash the BIOS, do it with
+caution. Inadequate BIOS flashing may result in system malfunction.
+• It is recommended that you not alter the default settings (unless you need to) to prevent system
+instability or other unexpected results. Inadequately altering the settings may result in system's
+failure to boot. If this occurs, try to clear the CMOS values and reset the board to default values.
+• Refer to the introductions of the battery/clear CMOS jumper in Chapter 2 or navigate to the "BIOS
+Setup" page of GIGABYTE's website and search for "Load Optimized Defaults" for how to clear
+the CMOS values.
+& Please visit GIGABYTE's website for details on configuring BIOS Setup.
+https://www.gigabyte.com/WebPage/917/amd600-bios.html
+- 34 -
+Startup Screen:
+The following startup Logo screen will appear when the computer boots.
+Function Keys
+Function Keys:
+<DEL>: BIOS SETUP\Q-FLASH
+Press the <Delete> key to enter BIOS Setup or to access the Q-Flash utility in BIOS Setup.
+<F12>: BOOT MENU
+Boot Menu allows you to set the first boot device without entering BIOS Setup. In Boot Menu, use the up
+arrow key <h> or the down arrow key <i> to select the first boot device, then press <Enter> to accept.
+The system will boot from the device immediately.
+Note: The setting in Boot Menu is effective for one time only. After system restart, the device boot order
+will still be based on BIOS Setup settings.
+<END>: Q-FLASH
+Press the <End> key to access the Q-Flash utility directly without having to enter BIOS Setup first.
+- 35 -
+Chapter 4 Installing the Operating System and Drivers
+4-1 Operating System Installation
+With the correct BIOS settings, you are ready to install the operating system.
+As some operating systems already include RAID driver, you do not need to install separate RAID driver during
+the Windows installation process. After the operating system is installed, we recommend that you install all
+required drivers from the GIGABYTE Control Center to ensure system performance and compatibility. If the
+operating system to be installed requires that you provide additional RAID driver during the OS installation
+process, please refer to the steps below:
+Step 1:
+Go to GIGABYTE's website, browse to the motherboard model's web page, download the AMD RAID Preinstall
+Driver file on the Support\Download\SATA RAID/AHCI page, unzip the file and copy the files to your USB
+thumb drive.
+Step 2:
+Boot from the Windows setup disc and perform standard OS installation steps. When the screen requesting you
+to load the driver appears, select Browse.
+Step 3:
+Insert the USB thumb drive and then browse to the location of the driver. Select AMD-RAID Bottom Device first
+and click Next to load the driver. Then select AMD-RAID Controller and click Next to load the driver. Finally,
+continue the OS installation.
+- 36 -
+4-2 Drivers Installation
+After you install the operating system, a dialog box will appear on the bottom-right corner of the desktop asking
+if you want to download and install the drivers and GIGABYTE applications via GIGABYTE Control Center
+(GCC). Click Install to proceed with the installation. (In BIOS Setup, make sure Settings\Gigabyte Utilities
+Downloader Configuration\Gigabyte Utilities Downloader is set to Enabled.)
+When the End User License Agreement dialog box appears, press <Accept> to install GIGABYTE Control
+Center (GCC). On the GIGABYTE CONTROL CENTER screen, select the drivers and applications you want
+to install and click Install.
+Before the installation, make sure the system is connected to the Internet.
+& Please visit GIGABYTE's website for more software information.
+https://www.gigabyte.com/WebPage/916/amd600-app.html
+& Please visit GIGABYTE's website for more troubleshooting information.
+https://www.gigabyte.com/WebPage/351/faq.html
+- 37 -
+Chapter 5 Appendix
+5-1 Configuring a RAID Set
+RAID Levels
+RAID 0 RAID 1 RAID 10
+Minimum Number of
+≥2 2 4
+Hard Drives
+Number of hard drives * (Number of hard drives/2) *
+Array Capacity Size of the smallest drive
+Size of the smallest drive Size of the smallest drive
+Fault Tolerance No Yes Yes
+Before you begin, please prepare the following items:
+This motherboard supports RAID 0, RAID 1, and RAID 10. Prepare the correct number of hard drives as indicated
+in the table above before configuring a RAID array.
+‧ SATA hard drives or SSDs. To ensure optimal performance, it is recommended that you use two hard drives
+with identical model and capacity.
+‧ Windows setup disc.
+‧ An Internet connected computer.
+‧ A USB thumb drive.
+An M.2 PCIe SSD cannot be used to set up a RAID set with a SATA hard drive.
+& Please visit GIGABYTE's website for details on configuring a RAID array.
+https://www.gigabyte.com/WebPage/918/amd600-raid.html
+- 38 -
+Regulatory Notices
+United States of America, Federal Communications Commission Statement
+Supplier's Declaration of Conformity
+47 CFR § 2.1077 Compliance Information
+Product Name: Motherboard
+Trade Name: GIGABYTE
+Model Number: B650 AERO G
+Responsible Party – U.S. Contact Information: G.B.T. Inc.
+Address: 17358 Railroad street, City Of Industry, CA91748
+Tel.: 1-626-854-9338
+Internet contact information: https://www.gigabyte.com
+FCC Compliance Statement:
+This device complies with Part 15 of the FCC Rules, Subpart B, Unintentional Radiators.
+Operation is subject to the following two conditions: (1) This device may not cause harmful interference, and (2) this
+device must accept any interference received, including interference that may cause undesired operation.
+The FCC with its action in ET Docket 96-8 has adopted a safety standard for human exposure to radio frequency (RF) electromagnetic energy emitted
+by FCC certified equipment. The Intel PRO/Wireless 5000 LAN products meet the Human Exposure limits found in OET Bulletin 65, 2001, and ANSI/
+IEEE C95.1, 1992. Proper operation of this radio according to the instructions found in this manual will result in exposure substantially below the FCC's
+recommended limits.
+The following safety precautions should be observed:
+• Do not touch or move antenna while the unit is transmitting or receiving.
+• Do not hold any component containing the radio such that the antenna is very close or touching any exposed parts of the body, especially the face
+or eyes, while transmitting.
+• Do not operate the radio or attempt to transmit data unless the antenna is connected; if not, the radio may be damaged.
+• Use in specific environments:
+- The use of wireless devices in hazardous locations is limited by the constraints posed by the safety directors of such environments.
+- The use of wireless devices on airplanes is governed by the Federal Aviation Administration (FAA).
+- The use of wireless devices in hospitals is restricted to the limits set forth by each hospital.
+Antenna use: damage to this device. The maximum allowed antenna gain for use with
+In order to comply with FCC RF exposure limits, low gain integrated this device is 6dBi in order tocomply with the E.I.R.P limit for the 5.25-to
+antennas should be located at a minimum distance of 7.9 inches (20 cm) 5.35 and 5.725 to 5.85 GHz frequency range in point-to-point operation. To
+or more from the body of all persons. comply with RF exposure requirements all antennas should be located at a
+Explosive Device Proximity Warning minimum distance of 20cm, or the minimum separation distance allowed
+Warning: Do not operate a portable transmitter (such as a wireless network by the module approval, from the body of all persons.
+device) near unshielded blasting caps or in an explosive environment Attention: l'utilisation d'un réseau sans fil IEEE802.11a est restreinte à
+unless the device has been modified to be qualified for such use. une utilisation en intérieur à cause du fonctionnement dansla bande de
+Antenna Warning fréquence 5.15-5.25 GHz. Industry Canada requiert que ce produit soit
+The wireless adapter is not designed for use with high-gain antennas. utilisé à l'intérieur des bâtiments pour la bande de fréquence 5.15-5.25
+GHz afin de réduire les possibilités d'interférences nuisibles aux canaux
+Use On Aircraft Caution co-existants des systèmes de transmission satellites. Les radars de
+Caution: Regulations of the FCC and FAA prohibit airborne operation of puissances ont fait l'objet d'une allocation primaire de fréquences dans
+radio-frequency wireless devices because their signals could interfere with les bandes 5.25-5.35 GHz et 5.65-5.85 GHz. Ces stations radar peuvent
+critical aircraft instruments. créer des interférences avec ce produit et/ou lui être nuisible. Le gain
+Other Wireless Devices d'antenne maximum permissible pour une utilisation avec ce produit est de
+Safety Notices for Other Devices in the Wireless Network: Refer to the 6 dBi afin d'être conforme aux limites de puissance isotropique rayonnée
+documentation supplied with wireless Ethernet adapters or other devices équivalente (P.I.R.E.) applicable.
+in the wireless network. dans les bandes 5.25-5.35 GHz et 5.725-5.85 GHz en fonctionnement
+Canada, Canada-Industry Notice: point-à-point. Pour se conformer aux conditions d'exposition de RF toutes
+This device complies with Industry Canada license-exempt RSS les antennes devraient être localisées à une distance minimum de 20 cm,
+standard(s). Operation is subject to the following two conditions: ou la distance de séparation minimum permise par l'approbation du module,
+(1) this device may not cause interference, and du corps de toutes les personnes.
+(2) this device must accept any interference, including interference that Under Industry Canada regulations, this radio transmitter may only operate
+may cause undesired operation of the device. using an antenna of a type and maximum (or lesser) gain approved for
+Cet appareil est conforme aux normes Canada d'Industrie de RSS the transmitter by Industry Canada. To reduce potential radio interference
+permis-exempt. L'utilisation est assujetti aux deux conditions suivantes: to other users, the antenna type and its gain should be chosen so that
+(1) le dispositif ne doit pas produire de brouillage préjudiciable, et the equivalent isotropically radiated power (e.i.r.p.) is not more than that
+(2) ce dispositif doit accepter tout brouillage reçu, y compris un brouillage necessary for successful communication.
+susceptible de provoquer un fonctionnement indésirable.
+Conformément à la réglementation d'Industrie Canada, le présent émetteur
+Caution: When using IEEE 802.11a wireless LAN, this product is restricted radio peut fonctionner avec une antenne d'un type et d'un gain maximal
+to indoor use due to its operation in the 5.15-to 5.25-GHz frequency (ou inférieur) approuvé pour l'émetteur par Industrie Canada. Dans le
+range. Industry Canada requires this product to be used indoors for the but de réduire les risques de brouillage radio électrique à l'intention des
+frequency range of 5.15 GHz to 5.25 GHz to reduce the potential for autres utilisateurs, il faut choisir le type d'antenne et son gain de sorte
+harmful interference to co-channel mobile satellite systems. High power que la puissance isotrope rayonnée équivalente (p.i.r.e.) ne dépasse pas
+radar is allocated as the primary user of the 5.25-to 5.35-GHz and 5.65 to l'intensité nécessaire à l'établissement d'une communication satisfaisante.
+5.85-GHz bands. These radar stations can cause interference with and/or
+- 39 -
+European Union (EU) CE Declaration of Conformity CE Declaración de conformidad
+This device complies with the following directives: Electromagnetic Este producto que llevan la marca CE cumplen con las siguientes
+Compatibility Directive 2014/30/EU, Low-voltage Directive 2014/35/EU, Directivas de la Unión Europea: Directiva EMC 2014/30/EU, Directiva de
+Radio Equipment Directive 2014/53/EU, ErP Directive 2009/125/EC, RoHS bajo voltaje 2014/35/EU, Directiva de equipamentos de rádio 2014/53/EU,
+directive (recast) 2011/65/EU & the 2015/863 Statement. Directiva RoHS 2011/65/EU y la Declaración 2015/863.
+This product has been tested and found to comply with all essential El cumplimiento de estas directivas se evalúa mediante las normas
+requirements of the Directives. europeas armonizadas.
+European Union (EU) RoHS (recast) Directive 2011/65/EU & the CE Dichiarazione di conformità
+European Commission Delegated Directive (EU) 2015/863 Statement I prodotti con il marchio CE sono conformi con una o più delle seguenti
+GIGABYTE products have not intended to add and safe from hazardous Direttive UE, come applicabile: Direttiva EMC 2014/30/UE, Direttiva sulla
+substances (Cd, Pb, Hg, Cr+6, PBDE, PBB, DEHP, BBP, DBP and DIBP). bassa tensione 2014/35/UE, Direttiva di apparecchiature radio 2014/53/
+The parts and components have been carefully selected to meet RoHS UE, Direttiva RoHS 2011/65/EU e Dichiarazione 2015/863.
+requirement. Moreover, we at GIGABYTE are continuing our efforts to La conformità con tali direttive viene valutata utilizzando gli Standard
+develop products that do not use internationally banned toxic chemicals. europei armonizzati applicabili.
+European Union (EU) Community Waste Electrical & Electronic Deklaracja zgodności UE Unii Europejskiej
+Equipment (WEEE) Directive Statement Urządzenie jest zgodne z następującymi dyrektywami: Dyrektywa
+GIGABYTE will fulfill the national laws as interpreted from the 2012/19/ kompatybilności elektromagnetycznej 2014/30/UE, Dyrektywa
+EU WEEE (Waste Electrical and Electronic Equipment) (recast) directive. niskonapięciowej 2014/35/UE, Dyrektywa urządzeń radiowych 2014/53/
+The WEEE Directive specifies the treatment, collection, recycling and UE, Dyrektywa RoHS 2011/65/UE i dyrektywa2015/863.
+disposal of electric and electronic devices and their components. Under Niniejsze urządzenie zostało poddane testom i stwierdzono jego zgodność
+the Directive, used equipment must be marked, collected separately, and z wymaganiami dyrektywy.
+disposed of properly.
+ES Prohlášení o shodě
+WEEE Symbol Statement Toto zařízení splňuje požadavky Směrnice o Elektromagnetické
+The symbol shown below is on the product or on its kompatibilitě 2014/30/EU, Směrnice o Nízkém napětí 2014/35/EU,
+packaging, which indicates that this product must not be Směrnice o rádiových zařízeních 2014/53/EU, Směrnice RoHS 2011/65/
+disposed of with other waste. Instead, the device should be EU a 2015/863.
+taken to the waste collection centers for activation of the Tento produkt byl testován a bylo shledáno, že splňuje všechny základní
+treatment, collection, recycling and disposal procedure. požadavky směrnic.
+For more information about where you can drop off your waste equipment EK megfelelőségi nyilatkozata
+for recycling, please contact your local government office, your household A termék megfelelnek az alábbi irányelvek és szabványok
+waste disposal service or where you purchased the product for details of követelményeinek, azok a kiállításidőpontjában érvényes, aktuális
+environmentally safe recycling. változatában: EMC irányelv 2014/30/EU, Kisfeszültségű villamos
+berendezésekre vonatkozó irányelv 2014/35/EU, rádióberendezések
+Battery Information irányelv 2014/53/EU, RoHS irányelv 2011/65/EU és 2015/863.
+European Union—Disposal and recycling information
+GIGABYTE Recycling Program (available in some regions) Δήλωση συμμόρφωσης ΕΕ
+Είναι σε συμμόρφωση με τις διατάξεις των παρακάτω Οδηγιών
+της Ευρωπαϊκής Κοινότητας: Οδηγία 2014/30/ΕΕ σχετικά με την
+ηλεκτρομαγνητική συμβατότητα, Οοδηγία χαμηλή τάση 2014/35/EU,
+Οδηγία 2014/53/ΕΕ σε ραδιοεξοπλισμό, Οδηγία RoHS 2011/65/ΕΕ
+This symbol indicates that this product and/or battery should not be και 2015/863.
+disposed of with household waste. You must use the public collection Η συμμόρφωση με αυτές τις οδηγίες αξιολογείται χρησιμοποιώντας τα
+system to return, recycle, or treat them in compliance with the local ισχύοντα εναρμονισμένα ευρωπαϊκά πρότυπα.
+regulations.
+End of Life Directives-Recycling
+The symbol shown below is on the product or on its packaging, D33006 RoHS
+which indicates that this product must not be disposed of with
+other waste. Instead, the device should be taken to the waste
+collection centers for activation of the treatment, collection,
+recycling and disposal procedure.
+Déclaration de Conformité aux Directives de l'Union européenne (UE)
+Cet appareil portant la marque CE est conforme aux directives de l'UE
+suivantes: directive Compatibilité Electromagnétique 2014/30/UE, directive
+Basse Tension 2014/35/UE, directive équipements radioélectriques
+2014/53/UE, la directive RoHS II 2011/65/UE & la déclaration 2015/863.
+La conformité à ces directives est évaluée sur la base des normes
+européennes harmonisées applicables.
+European Union (EU) CE-Konformitätserklärung
+Dieses Produkte mit CE-Kennzeichnung erfüllen folgenden EU-Richtlinien:
+EMV-Richtlinie 2014/30/EU, Niederspannungsrichtlinie 2014/35/EU,
+Funkanlagen Richtlinie 2014/53/EU, RoHS-Richtlinie 2011/65/EU erfüllt
+und die 2015/863 Erklärung.
+Die Konformität mit diesen Richtlinien wird unter Verwendung der
+entsprechenden Standards zurEuropäischen Normierung beurteilt.
+CE declaração de conformidade
+Este produto com a marcação CE estão em conformidade com das
+seguintes Diretivas UE: Diretiva Baixa Tensão 2014/35/EU; Diretiva
+CEM 2014/30/EU; Diretiva RSP 2011/65/UE e a declaração 2015/863.
+A conformidade com estas diretivas é verificada utilizando as normas
+europeias harmonizadas.
+- 40 -
+European Community Radio Equipment Directive Compliance Statement:
+This equipment complies with all the requirements and other relevant provisions of Radio Equipment Directive 2014/53/EU.
+This equipment is suitable for home and office use in all the European Community Member States and EFTA Member States.
+The low band 5.15 -5.35 GHz is for indoor use only.
+AT BE BG CH CY CZ DE
+DK EE EL ES FI FR HR
+HU IE IS IT LI LT LU
+LV MT NL PL PT RO SE
+SI SK TR UK
+NCC Wireless Statements / 無線設備警告聲明：
+低功率電波輻射性電機管理辦法
+(1) 取得審驗證明之低功率射頻器材，非經核准，公司、商號或使用者均不得擅自變更頻率、加大功率或變更原設計之特
+性及功能。低功率射頻器材之使用不得影響飛航安全及干擾合法通信；經發現有干擾現象時，應立即停用，並改善至
+無干擾時方得繼續使用。前述合法通信，指依電信管理法規定作業之無線電通信。低功率射頻器材須忍受合法通信或
+工業、科學及醫療用電波輻射性電機設備之干擾。
+(2) 應避免影響附近雷達系統之操作。
+Korea KCC NCC Wireless Statement:
+5,25GHz - 5,35 GHz 대역을 사용하는 무선 장치는 실내에서만 사용하도록 제한됩니다.
+Japan Wireless Statement:
+5.15 GHz 帯 ~ 5.35 GHz 帯: 屋内のみの使用。
+Wireless module approvals:
+Wireless module manufacturer: AMD Corporation
+Wireless module model name: RZ616 (MediaTek MT7922A22M)
+- 41 -
+Contact Us
+GIGA-BYTE TECHNOLOGY CO., LTD.
+Address: No.6, Baoqiang Rd., Xindian Dist., New Taipei City 231
+TEL: +886-2-8912-4000, FAX: +886-2-8912-4005
+Tech. and Non-Tech. Support (Sales/Marketing) : https://esupport.gigabyte.com
+WEB address (English): https://www.gigabyte.com
+WEB address (Chinese): https://www.gigabyte.com/tw
+• GIGABYTE eSupport
+To submit a technical or non-technical (Sales/Marketing) question, please link to:
+https://esupport.gigabyte.com
+- 42 -
