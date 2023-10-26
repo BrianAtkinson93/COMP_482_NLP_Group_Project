@@ -29,10 +29,10 @@ Adding something to the readme as example
 
 
 # Contributors
-> * Ayyan
+> * Ayyan Momin
 > * Brian Atkinson
-> * Mason
-> * Owen
+> * Mason Leitch
+> * Owen Gossen
 
 # License
 Include any licenses regarding packages used
