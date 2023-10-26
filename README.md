@@ -10,7 +10,7 @@ git clone https://github.com/BrianAtkinson93/COMP_482_NLP_Group_Project.git
 
 #### Create Virtual Environment
 ```bash
-python3.exe -m venv nlp_project_venv
+python3.exe -m venv venv
 ```
 
 #### Install required dependencies
