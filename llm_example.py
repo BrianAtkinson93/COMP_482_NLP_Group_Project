@@ -5,7 +5,14 @@ import os
 from fuzzywuzzy import process
 
 # Initialize OpenAI API client
-openai.api_key = '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'
+brian = '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'
+# mason = ""
+# owen = ""
+# ayyan = ""
+user = brian
+
+os.environ['OPEN_AI_KEY'] = user
+openai.api_key = os.getenv("OPEN_AI_KEY")
 
 # Knowledge base dictionary
 knowledge_base = {
