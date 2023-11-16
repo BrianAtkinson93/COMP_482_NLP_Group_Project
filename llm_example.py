@@ -1,3 +1,4 @@
+import re
 import tkinter as tk
 from tkinter import scrolledtext
 import openai
@@ -16,6 +17,7 @@ openai.api_key = os.getenv("OPEN_AI_KEY")
 # Knowledge base dictionary
 knowledge_base = {
     "python": "Python is a high-level, general-purpose programming language.",
+    "who are you": "I am a beautiful lady who dances in the rain with my circuits!"
     # ... add other knowledge base entries as needed
 }
 
@@ -49,7 +51,17 @@ def search_documents(query, document_knowledge_base):
 # Modified get_knowledge_base_response function
 def get_knowledge_base_response(query):
     # Check predefined knowledge base
-    kb_response = knowledge_base.get(query.lower())
+    print(f'query: {query}')
+    tokens = query.lower().split()
+    regex = re.compile('[^a-zA-Z0-9 ]')
+    response = regex.sub('', query)
+    for key in knowledge_base.keys():
+        key_tokens = key.split()
+        length = len(key_tokens)
+        print([i for i, j in zip(response, key_tokens) if i == j])
+
+    kb_response = knowledge_base.get(response.lower())
+    print(f'kb_response: {kb_response}')
     if kb_response:
         return kb_response, "Predefined Knowledge Base"
 
@@ -103,6 +115,7 @@ def send_message():
             chat_history.configure(state='disabled')
         else:
             # Check the knowledge base first
+            print(f'message: {message}')
             kb_response, source = get_knowledge_base_response(message)
             if kb_response:
                 response_message = f"{kb_response}"
