@@ -1,45 +1,25 @@
-import tkinter as tk
-from tkinter import Scrollbar, Text
+import gui
+import model
+import config
 
 
-class ChatbotGUI(tk.Tk):
-    def __init__(self):
-        super().__init__()
+def main():
+    chat_gui = gui.ChatGUI()
+    chat_model = model.ChatModel(config.config.api_key)  # Note the change here
 
-        self.title("Simple Chatbot GUI")
-        self.geometry("400x500")
+    def send_message_wrapper():
+        user_message = chat_gui.get_user_input()
+        if user_message:
+            # Display user's question in the chat history
+            chat_gui.update_chat_history(f"User: {user_message}\n", 'user')
 
-        self.text_widget = Text(self, wrap='word')
-        self.text_widget.pack(expand=True, fill='both')
-        self.text_widget.configure(state='disabled')
+            # Get and display the bot's response
+            response = chat_model.send_message(user_message)
+            chat_gui.update_chat_history(f"Bot: {response}\n", 'bot')
 
-        self.entry_widget = tk.Entry(self)
-        self.entry_widget.pack(fill='x')
-        self.entry_widget.bind("<Return>", self.on_enter)
-
-        self.send_button = tk.Button(self, text="Send", command=self.send_message)
-        self.send_button.pack()
-
-    def on_enter(self, event):
-        self.send_message()
-
-    def send_message(self):
-        user_message = self.entry_widget.get()
-        self.entry_widget.delete(0, 'end')
-        self.update_chat(f"You: {user_message}")
-
-        # Here you would process the user_message with your LLM and get a response
-        # For example: response = process_message_with_llm(user_message)
-        response = "Chatbot: I am a simple chatbot."
-        self.update_chat(response)
-
-    def update_chat(self, message):
-        self.text_widget.configure(state='normal')
-        self.text_widget.insert('end', message + '\n')
-        self.text_widget.configure(state='disabled')
-        self.text_widget.see('end')
+    chat_gui.set_send_message_action(send_message_wrapper)
+    chat_gui.run()
 
 
 if __name__ == "__main__":
-    app = ChatbotGUI()
-    app.mainloop()
+    main()
