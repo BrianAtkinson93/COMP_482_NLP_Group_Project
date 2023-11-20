@@ -3,9 +3,9 @@ from tkinter import scrolledtext
 
 
 class ChatGUI:
-    def __init__(self):
+    def __init__(self, model):
         self.window = tk.Tk()
-        self.window.title("Chat with GPT-3.5-turbo")
+        self.window.title(f"Chat with {model}")
         self.window.geometry("600x600")
 
         self.top_frame = tk.Frame(self.window)
