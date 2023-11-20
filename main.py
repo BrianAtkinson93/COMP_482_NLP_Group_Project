@@ -4,12 +4,13 @@ import gui
 import model
 import config
 
+models = {
+    1: ("nous_hermes", "nous-hermes-llama2-13b.Q4_0.gguf"),
+    2: ("mistral", "mistral-7b-openorca.Q4_0.gguf"),
+}
 
 def main_local(args):
-    models = {
-        1: ("nous_hermes", "nous-hermes-llama2-13b.Q4_0.gguf"),
-        2: ("mistral", "mistral-7b-openorca.Q4_0.gguf")
-    }
+
     chat_gui = gui.ChatGUI(models[args.model][1])
 
     # Initialize model with the correct path and model name
@@ -50,8 +51,8 @@ if __name__ == "__main__":
     # Main arguments
     parser.add_argument('-a-', '--api', default=False, action='store_true',
                         help='If you would like to use api based gpt4 - set flag')
-    parser.add_argument("-m", '--model', default=1, choices=[1, 2],
-                        help="To use a different model, chose a number 1 - 2")
+    parser.add_argument("-m", '--model', type=int, default=1, choices=[1, 2],
+                        help=f"To use a different model, chose a number {[x for x in models]}")
 
     arguments = parser.parse_args()
 

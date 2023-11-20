@@ -28,7 +28,15 @@ pip install -r requirements.txt
 
 ---
 
-Adding something to the readme as example
+##### To run the GUI you can provide the following arguments:
+
+```python
+python main.py --api
+```
+
+```python
+python main.py --model 1
+```
 
 # 
 
