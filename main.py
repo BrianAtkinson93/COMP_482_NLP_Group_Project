@@ -18,6 +18,9 @@ def main_local(args):
     # Initialize the GUI with the selected model
     chat_gui = gui.ChatGUI(models[args.model][0])
 
+    # Download model if it does not exist
+    ensure_models_exist(models[args.model])
+
     # Initialize the local GPT4All model
     chat_model = model.ChatModel_gpt4all(model_path='./models', model_name=models[args.model][1])
 
@@ -36,7 +39,7 @@ def main_local(args):
 
 def main_api(args):
     # Initialize the GUI with OpenAI model
-    chat_gui = gui.ChatGUI('gpt 3.5-turbo')
+    chat_gui = gui.ChatGUI(models[args.model][0])
 
     # Initialize the OpenAI API model
     chat_model = model.ChatModel_open_ai(config.config.api_key)
@@ -60,7 +63,7 @@ if __name__ == "__main__":
     # Define command-line arguments
     parser.add_argument('-a-', '--api', default=False, action='store_true',
                         help='Use this flag to run with the OpenAI API model.')
-    parser.add_argument("-m", '--model', type=int, default=1, choices=[1, 2],
+    parser.add_argument("-m", '--model', type=int, default=1, choices=[1, 2, 3, 4],
                         help="Choose a model number for the local GPT4All model.")
 
     # Parse arguments
