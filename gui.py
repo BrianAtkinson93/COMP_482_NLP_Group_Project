@@ -12,7 +12,12 @@ class ChatGUI:
 
         style = ttk.Style(self.window)
         # ('aqua', 'clam', 'alt', 'default', 'classic')
-        style.theme_use('aqua')  # Experiment with different themes
+        try:
+            style.theme_use('aqua')
+        except tk.TclError:
+            style.theme_use('clam')  # Experiment with different themes
+        except Exception as e:
+            print(f'New Error: {e}')
 
         # Customize button style
         style.configure('TButton', font=('Arial', 12), background='blue', foreground='white')
