@@ -1,9 +1,8 @@
 import argparse
-import gui
-import model
-import config
-
-from utilities import *
+from utilities import gui
+from models import model
+from utilities.config import config
+from utilities.utilities import *
 
 # Dictionary of available models
 models = {
