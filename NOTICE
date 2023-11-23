@@ -1,0 +1,16 @@
+NOTICE: Group Project - NLP | Fall 2023 - Customer Support Chat Bot
+
+This product includes software developed at the University of the Frase Valley by Brian Atkinson and the following third-party components:
+
+1. Selenium
+   - Description: Selenium is a suite of tools for automating web browsers.
+   - License: Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0)
+   - Source: https://www.selenium.dev/
+   - License Details: https://creativecommons.org/licenses/by-sa/4.0/
+
+2. GPT-4 Models (GGUF models) from gpt4all.io
+   - Description: GPT-4 models provided by gpt4all.io.
+   - License: [Specify the license if known, or state that the licensing terms are available on their website]
+   - Source: https://gpt4all.io/index.html
+
+Please note that the licenses mentioned above, and the copyrights of the respective components, are respected and acknowledged. This NOTICE file is for informational purposes only and does not alter the licenses of the underlying software.
