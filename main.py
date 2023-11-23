@@ -15,6 +15,14 @@ models = {
 
 
 def main_local(args):
+    """
+    Runs the chat application with a local GPT4All model.
+
+    This function initializes the GUI, ensures the selected model exists, and sets up the chat interface.
+
+    Args:
+        args (Namespace): Command line arguments passed to the script.
+    """
     # Initialize the GUI with the selected model
     chat_gui = gui.ChatGUI(models[args.model][0])
 
@@ -38,6 +46,14 @@ def main_local(args):
 
 
 def main_api(args):
+    """
+    Runs the chat application with the OpenAI API model.
+
+    This function initializes the GUI with the OpenAI model and sets up the chat interface.
+
+    Args:
+        args (Namespace): Command line arguments passed to the script.
+    """
     # Initialize the GUI with OpenAI model
     chat_gui = gui.ChatGUI(models[args.model][0])
 
