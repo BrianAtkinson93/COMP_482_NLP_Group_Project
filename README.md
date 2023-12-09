@@ -28,14 +28,10 @@ pip install -r requirements.txt
 
 ---
 
-##### To run the GUI you can provide the following arguments:
+##### To run the GUI simply run main.py:
 
 ```python
-python main.py --api
-```
-
-```python
-python main.py --model 1
+python main.py
 ```
 
 # 
@@ -55,8 +51,10 @@ This project includes third-party components under their respective licenses:
 
 - **GPT-4 Models (GGUF models) from gpt4all.io**: The licensing terms for these models should be reviewed at [gpt4all.io](https://gpt4all.io/index.html).
 
+- **QLoRA**: QLoRA finetuning is licensed under MIT license. [QLoRA github repository](https://github.com/artidoro/qlora).
+
+- **Llama.cpp**: Llama.cpp is licensed under MIT license. [Llama.cpp github repository](https://github.com/ggerganov/llama.cpp).
+
+- **WizardLM 7B**: WizardLM 7B is non commercially licensed. [WizardLM-7B-V1.0](https://huggingface.co/WizardLM/WizardLM-7B-V1.0).
+
 Additionally, the code written for this project by the contributors is subject to its own licensing terms, which should be specified here. [Specify your project's license, e.g., MIT, Apache 2.0, etc.]
-
-# WebLinks
-
-- [GPT-4 Models - gpt4all.io](https://gpt4all.io/index.html)
