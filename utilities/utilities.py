@@ -67,9 +67,9 @@ def download_model(model_name, download_url):
         print(f"Model already exists: {model_name}")
 
 
-def ensure_models_exist(which):
+def ensure_model_exists(model_name):
     """
-    Ensures that the specified models exist in the local directory, downloading them if necessary.
+    Ensures that the model exists in the local directory, downloading if necessary.
 
     Args:
         which (tuple): A tuple containing the keys of the models to be checked and downloaded if necessary.
@@ -77,13 +77,6 @@ def ensure_models_exist(which):
     Returns:
         None: This function does not return anything.
     """
-    model_urls = {
-        "nous_hermes": (
-            "nous-hermes-llama2-13b.Q4_0.gguf", "https://gpt4all.io/models/gguf/nous-hermes-llama2-13b.Q4_0.gguf"),
-        "mistral": ("mistral-7b-openorca.Q4_0.gguf", "https://gpt4all.io/models/gguf/mistral-7b-openorca.Q4_0.gguf"),
-        "mistral_2": (
-            "mistral-7b-instruct-v0.1.Q4_0.gguf", "https://gpt4all.io/models/gguf/mistral-7b-instruct-v0.1.Q4_0.gguf"),
-        "wizard": ("wizardlm-13b-v1.2.Q4_0.gguf", "https://gpt4all.io/models/gguf/wizardlm-13b-v1.2.Q4_0.gguf")
-    }
+    model_url = "https://huggingface.co/masonym/gigabyte-1k-q4_0-GGUF/resolve/main/gigabyte-1k-q4_0.gguf?download=true"
 
-    download_model(*model_urls[which[0]])
+    download_model(model_name, model_url)
