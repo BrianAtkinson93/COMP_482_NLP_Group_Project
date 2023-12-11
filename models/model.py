@@ -34,7 +34,7 @@ class ChatModelGpt4All:
 
         Returns:
             str: The response from the model.
-        """
+        """ 
         with self.model.chat_session():
             output = self.model.generate(user_message, max_tokens=500)
         return output
