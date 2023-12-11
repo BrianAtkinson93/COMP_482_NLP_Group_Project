@@ -60,7 +60,7 @@ def main_api(args):
     chat_gui = gui.ChatGUI(models[args.model][0])
 
     # Initialize the OpenAI API model
-    chat_model = model.ChatModel_open_ai(config.config.api_key)
+    chat_model = model.ChatModel_open_ai(config.api_key)
 
     # Function to handle sending messages
     def send_message_wrapper():
