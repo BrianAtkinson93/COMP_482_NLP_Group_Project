@@ -30,6 +30,8 @@ pip install -r requirements.txt
 ---
 
 ##### To run the GUI simply run main.py:
+
+### WINDOWS
 ```bash
 # For help message and expected arguments
 python.exe main.py -h
@@ -42,8 +44,6 @@ python.exe main.py -h
 #  -m {1,2,3,4,5}, --model {1,2,3,4,5}
 #                        Choose a model number for the local GPT4All model. (Default is 5)
 ```
-
-### WINDOWS
 ```bash
 # Main program execution
 
@@ -60,6 +60,18 @@ python.exe main.py --model <1-5>
 python3 main.py --api
 ```
 ### LINUX 
+```bash
+# For help message and expected arguments
+python3 main.py -h
+
+#usage: main.py [-h] [-a-] [-m {1,2,3,4,5}]
+#
+#options:
+#  -h, --help            show this help message and exit
+#  -a-, --api            Use this flag to run with the OpenAI API model.
+#  -m {1,2,3,4,5}, --model {1,2,3,4,5}
+#                        Choose a model number for the local GPT4All model. (Default is 5)
+```
 ```bash
 # Main program execution
 
