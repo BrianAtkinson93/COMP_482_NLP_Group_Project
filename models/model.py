@@ -1,8 +1,9 @@
+import sys
 import openai
 from gpt4all import GPT4All
 
 
-class ChatModel_gpt4all:
+class ChatModelGpt4All:
     """
     A class to handle interactions with a local GPT4All model.
 
@@ -11,7 +12,8 @@ class ChatModel_gpt4all:
         name (str): The name of the model file.
         model (GPT4All): An instance of the GPT4All model.
     """
-    def __init__(self, model_path, model_name):
+
+    def __init__(self, model_path, model_name, allow_download):
         """
         Initializes the ChatModel_gpt4all with the specified model.
 
@@ -21,7 +23,7 @@ class ChatModel_gpt4all:
         """
         self.path = model_path
         self.name = model_name
-        self.model = GPT4All(model_path=self.path, model_name=self.name, allow_download=False)
+        self.model = GPT4All(model_path=self.path, model_name=self.name, allow_download=allow_download)
 
     def send_message(self, user_message):
         """
@@ -45,6 +47,7 @@ class ChatModel_open_ai:
     Attributes:
         messages (list): A list to store the conversation history.
     """
+
     def __init__(self, api_key):
         """
         Initializes the ChatModel_open_ai with the provided API key.

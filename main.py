@@ -9,7 +9,8 @@ models = {
     1: ("nous_hermes", "nous-hermes-llama2-13b.Q4_0.gguf"),
     2: ("mistral", "mistral-7b-openorca.Q4_0.gguf"),
     3: ("mistral_2", "mistral-7b-instruct-v0.1.Q4_0.gguf"),
-    4: ("wizard", "wizardlm-13b-v1.2.Q4_0.gguf")
+    4: ("wizard", "wizardlm-13b-v1.2.Q4_0.gguf"),
+    5: ("Brian-Mason", "gigabyte-1k-q4_0.gguf")
 }
 
 
@@ -28,8 +29,10 @@ def main_local(args):
     # Download model if it does not exist
     ensure_models_exist(models[args.model])
 
+    # print(models[args.model][1])
+    # sys.exit(8)
     # Initialize the local GPT4All model
-    chat_model = model.ChatModel_gpt4all(model_path='./models', model_name=models[args.model][1])
+    chat_model = model.ChatModelGpt4All(model_path='./models', model_name=models[args.model][1], allow_download=True)
 
     # Function to handle sending messages
     def send_message_wrapper():
@@ -78,7 +81,7 @@ if __name__ == "__main__":
     # Define command-line arguments
     parser.add_argument('-a-', '--api', default=False, action='store_true',
                         help='Use this flag to run with the OpenAI API model.')
-    parser.add_argument("-m", '--model', type=int, default=1, choices=[1, 2, 3, 4],
+    parser.add_argument("-m", '--model', type=int, default=5, choices=[1, 2, 3, 4, 5],
                         help="Choose a model number for the local GPT4All model.")
 
     # Parse arguments
