@@ -30,36 +30,51 @@ pip install -r requirements.txt
 ---
 
 ##### To run the GUI simply run main.py:
-```python
+```bash
 # For help message and expected arguments
-python main.py -h
+python.exe main.py -h
 
-usage: main.py [-h] [-a-] [-m {1,2,3,4,5}]
-
-options:
-  -h, --help            show this help message and exit
-  -a-, --api            Use this flag to run with the OpenAI API model.
-  -m {1,2,3,4,5}, --model {1,2,3,4,5}
-                        Choose a model number for the local GPT4All model. (Default is 5)
+#usage: main.py [-h] [-a-] [-m {1,2,3,4,5}]
+#
+#options:
+#  -h, --help            show this help message and exit
+#  -a-, --api            Use this flag to run with the OpenAI API model.
+#  -m {1,2,3,4,5}, --model {1,2,3,4,5}
+#                        Choose a model number for the local GPT4All model. (Default is 5)
 ```
 
-```python
+### WINDOWS
+```bash
 # Main program execution
-python main.py
+
+python.exe main.py
 ```
 
-```python
+```bash
 # Optional model selection
-python main.py --model <1-5>
+python.exe main.py --model <1-5>
 ```
 
-```python
+```bash
 # For use with an API to GPT4
-python main.py --api
+python3 main.py --api
+```
+### LINUX 
+```bash
+# Main program execution
+
+python3 main.py
 ```
 
-# 
+```bash
+# Optional model selection
+python3 main.py --model <1-5>
+```
 
+```bash
+# For use with an API to GPT4
+python3 main.py --api
+```
 # Contributors
 > * Brian Atkinson - Main Infrastructure, GUI, Scrapper
 > * Mason Leitch - Custom model training, Fine-Tuning, Quantization
