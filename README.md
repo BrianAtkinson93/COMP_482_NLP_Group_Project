@@ -1,14 +1,16 @@
-# This is out group project for NLP with Russell
+# NLP Group Project with Russell - COMP 482
+
+This project focuses on Natural Language Processing (NLP) applications, utilizing various GPT models, a custom model which was fine-tuned using FAQ data from gigabytes website and a custom GUI. It was developed as part of the COMP 482 course.
 
 ---
 
-# Installation
+## Installation
 
-#### Clone the repository
+### Clone the repository
 
 ```bash
 git clone https://github.com/BrianAtkinson93/COMP_482_NLP_Group_Project.git
-```
+
 
 #### Create Virtual Environment
 
@@ -60,10 +62,9 @@ python main.py --api
 # 
 
 # Contributors
-
+> * Brian Atkinson - Main Infrastructure, GUI, Scrapper
+> * Mason Leitch - Custom model training, Fine-Tuning, Quantization
 > * Ayyan Momin
-> * Brian Atkinson
-> * Mason Leitch
 > * Owen Gossen
 
 # License
