@@ -25,7 +25,8 @@ git clone https://github.com/BrianAtkinson93/COMP_482_NLP_Group_Project.git
 #### Install required dependencies
 
 ```bash
-pip install -r requirements.txt
+# Source the virtual environment then:
+pip install -r requirements.txt;
 ```
 
 ---
