@@ -16,6 +16,7 @@ class ChatGUI:
         send_button (ttk.Button): The button to send messages.
         loading_label (ttk.Label): A label to indicate processing of messages.
     """
+
     def __init__(self, model):
         """
         Initializes the ChatGUI with a specified model.
@@ -64,6 +65,27 @@ class ChatGUI:
         self.window.bind('<Return>', lambda event: self.send_message())
 
         self.user_input.focus_set()
+        self._flashing_after_id = None
+
+    def show_loading_indicator(self):
+        """ Show the loading indicator. """
+        self.loading_label.config(foreground="red", text="Processing...")
+        self.loading_label.pack(side=tk.RIGHT, padx=10)  # Make sure the label is packed
+        self._flash_loading_label()
+
+    def hide_loading_indicator(self):
+        """ Hide the loading indicator. """
+        if self._flashing_after_id is not None:
+            self.loading_label.after_cancel(self._flashing_after_id)
+        self.loading_label.pack_forget()
+
+    def _flash_loading_label(self):
+        """ Create a flashing effect for the loading label. """
+        current_color = self.loading_label.cget("foreground")
+        next_color = "white" if current_color == "red" else "red"
+        self.loading_label.config(foreground=next_color)
+        # Schedule the next color change
+        self._flashing_after_id = self.loading_label.after(500, self._flash_loading_label)
 
     def send_message(self):
         """

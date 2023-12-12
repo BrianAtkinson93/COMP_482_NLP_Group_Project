@@ -1,4 +1,6 @@
 import argparse
+import threading
+
 from utilities import gui
 from models import model
 from utilities.config import config
@@ -34,15 +36,19 @@ def main_local(args):
     # Initialize the local GPT4All model
     chat_model = model.ChatModelGpt4All(model_path='./models', model_name=models[args.model][1], allow_download=True)
 
-    # Function to handle sending messages
     def send_message_wrapper():
         user_message = chat_gui.get_user_input()
         if user_message:
-            response = chat_model.send_message(user_message)
             chat_gui.update_chat_history(f"User: {user_message}\n", 'user')
-            chat_gui.update_chat_history(f"Bot: {response}\n", 'bot')
+            chat_gui.show_loading_indicator()  # Show loading indicator
 
-    # Set the action for sending messages and run the GUI
+            def handle_response():
+                response = chat_model.send_message(user_message)
+                chat_gui.window.after(0, lambda: chat_gui.update_chat_history(f"Bot: {response}\n", 'bot'))
+                chat_gui.window.after(0, chat_gui.hide_loading_indicator)  # Hide loading indicator
+
+            threading.Thread(target=handle_response).start()
+
     chat_gui.set_send_message_action(send_message_wrapper)
     chat_gui.run()
 
@@ -62,16 +68,24 @@ def main_api(args):
     # Initialize the OpenAI API model
     chat_model = model.ChatModel_open_ai(config.api_key)
 
-    # Function to handle sending messages
     def send_message_wrapper():
         user_message = chat_gui.get_user_input()
         if user_message:
+            # Update the chat history immediately with the user's message
             chat_gui.update_chat_history(f"User: {user_message}\n", 'user')
-            response = chat_model.send_message(user_message)
-            chat_gui.update_chat_history(f"Bot: {response}\n", 'bot')
+
+            # Function to handle model response
+            def handle_model_response():
+                response = chat_model.send_message(user_message)
+                chat_gui.update_chat_history(f"Bot: {response}\n", 'bot')
+
+            # Start a new thread for model response
+            response_thread = threading.Thread(target=handle_model_response)
+            response_thread.start()
 
     # Set the action for sending messages and run the GUI
     chat_gui.set_send_message_action(send_message_wrapper)
+
     chat_gui.run()
 
 
