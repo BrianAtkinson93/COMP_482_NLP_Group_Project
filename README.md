@@ -96,8 +96,8 @@ python3 main.py --api
 # Contributors
 > * Brian Atkinson - Main Infrastructure, GUI, Scrapper
 > * Mason Leitch - Custom model training, Fine-Tuning, Quantization
-> * Ayyan Momin - Testing, file conversion, Presentation
-> * Owen Gossen
+> * Ayyan Momin
+> * Owen Gossen - Testing, file conversion, Presentation
 
 # License
 
