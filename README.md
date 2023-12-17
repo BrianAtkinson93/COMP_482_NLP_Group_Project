@@ -101,6 +101,12 @@ python3 main.py --api
 
 # License
 
+# HuggingFace Model Link 
+
+The fine-tuned model is automatically downloaded from HuggingFace, but here is the URL for reference:
+
+> [https://huggingface.co/masonym/gigabyte-1k-q4_0-GGUF](https://huggingface.co/masonym/gigabyte-1k-q4_0-GGUF).
+
 This project includes third-party components under their respective licenses:
 
 - **Selenium**: Licensed under the Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0). For more details, see [CC BY-SA 4.0 License](https://creativecommons.org/licenses/by-sa/4.0/).
