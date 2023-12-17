@@ -99,13 +99,13 @@ python3 main.py --api
 > * Ayyan Momin
 > * Owen Gossen - Testing, file conversion, Presentation
 
-# License
-
 # HuggingFace Model Link 
 
 The fine-tuned model is automatically downloaded from HuggingFace, but here is the URL for reference:
 
 > [https://huggingface.co/masonym/gigabyte-1k-q4_0-GGUF](https://huggingface.co/masonym/gigabyte-1k-q4_0-GGUF).
+
+# License
 
 This project includes third-party components under their respective licenses:
 
