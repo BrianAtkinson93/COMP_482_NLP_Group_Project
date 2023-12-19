@@ -96,7 +96,6 @@ python3 main.py --api
 # Contributors
 > * Brian Atkinson - Main Infrastructure, GUI, Scrapper
 > * Mason Leitch - Custom model training, Fine-Tuning, Quantization
-> * Ayyan Momin
 > * Owen Gossen - Testing, file conversion, Presentation
 
 # HuggingFace Model Link 
